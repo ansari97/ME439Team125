@@ -39,14 +39,13 @@ def generate_launch_description():
             output='screen',  # Enable output to screen
             parameters=[params_file]
         ),
-        Node(
-            package='xarmrob',
-            executable='endpoint_keyboard_smooth',
-            name='endpoint_keyboard_smooth',
-            output='screen',  # Enable input and output to screen
-            parameters=[params_file],
-            prefix='x-terminal-emulator -e "ros2 run xarmrob endpoint_keyboard_smooth; read"'  # Open in a new terminal and keep it open
-        ),
+        # Node(
+        #     package='xarmrob',
+        #     executable='endpoint_keyboard',
+        #     name='endpoint_keyboard',
+        #     output='screen',  # Enable input and output to screen
+        #     parameters=[params_file],
+        # ),
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
