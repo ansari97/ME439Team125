@@ -11,7 +11,7 @@ def generate_launch_description():
         get_package_share_directory('xarmrob'),
         'urdf',
         urdf_file_name
-        )
+    )
     with open(urdf, 'r') as infp:
         robot_desc = infp.read()
         
@@ -21,7 +21,7 @@ def generate_launch_description():
         get_package_share_directory('xarmrob'),
         'config',
         params_file_name
-        )
+    )
     
     # Create the Launch Description
     launch_descr = LaunchDescription([
@@ -29,33 +29,32 @@ def generate_launch_description():
             package='xarmrob',
             executable='command_xarm',
             name='command_xarm',
+            output='screen',  # Enable output to screen
             parameters=[params_file]
         ),
         Node(
             package='xarmrob',
             executable='xarm_kinematics',
             name='xarm_kinematics',
+            output='screen',  # Enable output to screen
             parameters=[params_file]
         ),
-        # Node(
-        #     package='xarmrob',
-        #     executable='endpoint_keyboard_smooth',
-        #     name='endpoint_keyboard_smooth',
-        #     output = 'screen',
-        #     parameters=[params_file]
-        # ),
-        
-        # This adds "robot_state_publisher" to publish Transforms through the "tf2" mechanism. It is a stock ROS package, and it uses the URDF file and "joint_states" topic to work. 
+        Node(
+            package='xarmrob',
+            executable='endpoint_keyboard_smooth',
+            name='endpoint_keyboard_smooth',
+            output='screen',  # Enable input and output to screen
+            parameters=[params_file],
+            prefix='x-terminal-emulator -e'  # Open in a new terminal
+        ),
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
             name='robot_state_publisher',
-            output='screen',
+            output='screen',  # Enable output to screen
             parameters=[{'robot_description': robot_desc}],
             arguments=[urdf]
         )
     ])
     
     return launch_descr
-    
-
