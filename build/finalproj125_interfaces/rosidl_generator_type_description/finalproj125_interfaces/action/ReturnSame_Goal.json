@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "finalproj125_interfaces/action/ReturnSame_Goal",
+      "fields": [
+        {
+          "name": "order",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "finalproj125_interfaces/action/ReturnSame_Goal",
+      "hash_string": "RIHS01_9613e420342ab2333c529faa3e5a6849134aa14e732371b99533ff2fab3f04e7"
+    }
+  ]
+}

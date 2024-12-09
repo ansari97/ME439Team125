@@ -1,0 +1,13 @@
+{
+  "package_name": "xarmrob_interfaces",
+  "non_idl_tuples": [
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:msg/ME439JointCommand.msg",
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:msg/ME439GripperCommand.msg",
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:msg/ME439JointLocation.msg",
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:msg/ME439PointXYZ.msg",
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:action/ME439MoveToTarget.action",
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:action/OperateGripper.action",
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:srv/ME439XArmForwardKinematics.srv",
+    "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces:srv/ME439XArmInverseKinematics.srv"
+  ]
+}

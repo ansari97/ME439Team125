@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from xarmrob_interfaces/srv/ME439XArmInverseKinematics.srv
+// generated code does not contain a copyright notice
+
+
+module xarmrob_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "This is a Service Request that holds data to describe the desired endpoint (meters). An absolute end effector pose is allowed for the inverse kinematics algorithm to use (a 3x3 array serialized).")
+    struct ME439XArmInverseKinematics_Request {
+      sequence<float> endpoint;
+
+      @default (value="(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)")
+      sequence<float> effector_pose;
+    };
+    @verbatim (language="comment", text=
+      "This is a Service Response that holds data to describe the joint angles (radians), predicted endpoint, and whether it was modified from the request. ")
+    struct ME439XArmInverseKinematics_Response {
+      sequence<float> joint_angles;
+
+      sequence<float> endpoint;
+
+      @default (value=FALSE)
+      boolean modified;
+    };
+  };
+};

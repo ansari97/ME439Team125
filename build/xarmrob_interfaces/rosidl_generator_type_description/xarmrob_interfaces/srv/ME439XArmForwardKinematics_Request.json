@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/srv/ME439XArmForwardKinematics_Request",
+      "fields": [
+        {
+          "name": "joint_angles",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/srv/ME439XArmForwardKinematics_Request",
+      "hash_string": "RIHS01_bcc8b025baef18b2358bdaf704877494ee804e11035b89e3378d1b6d99c3c4e1"
+    }
+  ]
+}

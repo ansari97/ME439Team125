@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/action/OperateGripper_Result",
+      "fields": [
+        {
+          "name": "result",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/action/OperateGripper_Result",
+      "hash_string": "RIHS01_76866be5bd8d91d3f4eb3a33f7e5b9c45e4cb9b08ddad2bb21b3214545072f2e"
+    }
+  ]
+}

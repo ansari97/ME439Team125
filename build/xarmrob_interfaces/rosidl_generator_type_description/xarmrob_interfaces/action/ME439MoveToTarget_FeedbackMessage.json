@@ -1,0 +1,75 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_FeedbackMessage",
+      "fields": [
+        {
+          "name": "goal_id",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "unique_identifier_msgs/msg/UUID"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "xarmrob_interfaces/action/ME439MoveToTarget_Feedback"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_Feedback",
+        "fields": [
+          {
+            "name": "xyz",
+            "type": {
+              "type_id": 58,
+              "capacity": 3,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_FeedbackMessage",
+      "hash_string": "RIHS01_1c79449b4bb37b7422db5e0894ec9a653d7fc9d631bef6617449d01b53fce8eb"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    },
+    {
+      "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_Feedback",
+      "hash_string": "RIHS01_a6ec67bb6c7b2436f4196ef0c477dce9900cca196ff3da450e7d129271a0c5b2"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from xarmrob_interfaces/srv/ME439XArmForwardKinematics.srv
+// generated code does not contain a copyright notice
+
+
+module xarmrob_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "This is a Service Request that holds data to describe the desired joint angles (radians)")
+    struct ME439XArmForwardKinematics_Request {
+      sequence<float> joint_angles;
+    };
+    @verbatim (language="comment", text=
+      "This is a Service Response that holds data to describe the nearest viable joint state (radians), predicted endpoint, and whether it was modified from the request. ")
+    struct ME439XArmForwardKinematics_Response {
+      sequence<float> joint_angles;
+
+      sequence<float> endpoint;
+
+      @default (value=FALSE)
+      boolean modified;
+    };
+  };
+};

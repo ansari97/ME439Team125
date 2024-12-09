@@ -1,0 +1,4 @@
+source;share/finalproj125_interfaces/local_setup.bash
+source;share/finalproj125_interfaces/local_setup.dsv
+source;share/finalproj125_interfaces/local_setup.sh
+source;share/finalproj125_interfaces/local_setup.zsh

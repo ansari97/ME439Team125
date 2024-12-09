@@ -1,0 +1,18 @@
+running develop
+running egg_info
+creating finalproj125.egg-info
+writing finalproj125.egg-info/PKG-INFO
+writing dependency_links to finalproj125.egg-info/dependency_links.txt
+writing requirements to finalproj125.egg-info/requires.txt
+writing top-level names to finalproj125.egg-info/top_level.txt
+writing manifest file 'finalproj125.egg-info/SOURCES.txt'
+reading manifest file 'finalproj125.egg-info/SOURCES.txt'
+writing manifest file 'finalproj125.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages/finalproj125.egg-link (link to .)
+
+Installed /home/aansari/Documents/ME439/ME439Team125/build/finalproj125
+running symlink_data
+creating /home/aansari/Documents/ME439/ME439Team125/install/finalproj125/share/ament_index/resource_index/packages
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/finalproj125/resource/finalproj125 -> /home/aansari/Documents/ME439/ME439Team125/install/finalproj125/share/ament_index/resource_index/packages
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/finalproj125/package.xml -> /home/aansari/Documents/ME439/ME439Team125/install/finalproj125/share/finalproj125

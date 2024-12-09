@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "xarmrob_interfaces/action/ME439MoveToTarget_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_Result",
+        "fields": [
+          {
+            "name": "xyz",
+            "type": {
+              "type_id": 58,
+              "capacity": 3,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_GetResult_Response",
+      "hash_string": "RIHS01_dfd125cec1a6dbcfb86832920d9c25872c5b192ea1ec52766abc36d47be5b7d1"
+    },
+    {
+      "type_name": "xarmrob_interfaces/action/ME439MoveToTarget_Result",
+      "hash_string": "RIHS01_0d9b956c88943208097c642723ea4939c0ce8072ed40af0845e84f9c62bf92aa"
+    }
+  ]
+}

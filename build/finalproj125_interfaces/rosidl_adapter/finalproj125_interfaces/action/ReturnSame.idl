@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from finalproj125_interfaces/action/ReturnSame.action
+// generated code does not contain a copyright notice
+
+
+module finalproj125_interfaces {
+  module action {
+    struct ReturnSame_Goal {
+      int32 order;
+    };
+    struct ReturnSame_Result {
+      int32 action_result;
+    };
+    struct ReturnSame_Feedback {
+      int32 feedback;
+    };
+  };
+};

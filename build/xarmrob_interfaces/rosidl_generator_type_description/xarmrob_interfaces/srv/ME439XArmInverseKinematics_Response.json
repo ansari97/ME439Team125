@@ -1,0 +1,46 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/srv/ME439XArmInverseKinematics_Response",
+      "fields": [
+        {
+          "name": "joint_angles",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "endpoint",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "modified",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": "False"
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/srv/ME439XArmInverseKinematics_Response",
+      "hash_string": "RIHS01_ee66e05f56cee669db67fa4ded7d3327c0ad5ec304c04d84a48d0435ed6fd568"
+    }
+  ]
+}

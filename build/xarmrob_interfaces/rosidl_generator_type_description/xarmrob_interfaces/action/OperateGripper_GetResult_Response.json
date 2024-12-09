@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/action/OperateGripper_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "xarmrob_interfaces/action/OperateGripper_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "xarmrob_interfaces/action/OperateGripper_Result",
+        "fields": [
+          {
+            "name": "result",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/action/OperateGripper_GetResult_Response",
+      "hash_string": "RIHS01_5b7b1d10c09abb3998265fd8adf79eda3469cfe75bffab56639e206ef400a690"
+    },
+    {
+      "type_name": "xarmrob_interfaces/action/OperateGripper_Result",
+      "hash_string": "RIHS01_76866be5bd8d91d3f4eb3a33f7e5b9c45e4cb9b08ddad2bb21b3214545072f2e"
+    }
+  ]
+}

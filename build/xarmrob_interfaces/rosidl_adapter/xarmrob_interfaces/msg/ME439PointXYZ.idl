@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xarmrob_interfaces/msg/ME439PointXYZ.msg
+// generated code does not contain a copyright notice
+
+
+module xarmrob_interfaces {
+  module msg {
+    typedef float float__3[3];
+    struct ME439PointXYZ {
+      float__3 xyz;
+    };
+  };
+};

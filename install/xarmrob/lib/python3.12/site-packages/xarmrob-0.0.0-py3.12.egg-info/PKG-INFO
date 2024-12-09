@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xarmrob
+Version: 0.0.0
+Summary: Code for the robot arm package "xarmrob" used in the University of Wisconsin-Madison course ME/ECE 439
+Maintainer: PeterAdamczyk
+Maintainer-email: peter.adamczyk@wisc.edu
+License: Apache-2.0
+License-File: LICENSE
+Requires-Dist: setuptools

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/action/OperateGripper_Feedback",
+      "fields": [
+        {
+          "name": "feedback",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/action/OperateGripper_Feedback",
+      "hash_string": "RIHS01_4eaf53f60b1c8419bfdd4fb0382637044245ce43830471c802a419d32c13ddf6"
+    }
+  ]
+}

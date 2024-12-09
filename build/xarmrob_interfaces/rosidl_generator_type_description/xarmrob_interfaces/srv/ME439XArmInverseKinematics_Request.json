@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "xarmrob_interfaces/srv/ME439XArmInverseKinematics_Request",
+      "fields": [
+        {
+          "name": "endpoint",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "effector_pose",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": "(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)"
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "xarmrob_interfaces/srv/ME439XArmInverseKinematics_Request",
+      "hash_string": "RIHS01_7b09e94c15b9b1866a545175158144edac33ea7fc23f5149d74d4fae5caa140d"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from xarmrob_interfaces/action/ME439MoveToTarget.action
+// generated code does not contain a copyright notice
+
+
+module xarmrob_interfaces {
+  module action {
+    typedef float float__3[3];
+    @verbatim (language="comment", text=
+      "Request")
+    struct ME439MoveToTarget_Goal {
+      float__3 xyz;
+    };
+    typedef float float__3[3];
+    @verbatim (language="comment", text=
+      "Result")
+    struct ME439MoveToTarget_Result {
+      float__3 xyz;
+    };
+    typedef float float__3[3];
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct ME439MoveToTarget_Feedback {
+      float__3 xyz;
+    };
+  };
+};

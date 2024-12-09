@@ -1,0 +1,4 @@
+source;share/xarmrob_interfaces/local_setup.bash
+source;share/xarmrob_interfaces/local_setup.dsv
+source;share/xarmrob_interfaces/local_setup.sh
+source;share/xarmrob_interfaces/local_setup.zsh

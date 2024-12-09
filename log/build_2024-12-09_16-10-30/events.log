@@ -1,0 +1,841 @@
+[0.000000] (-) TimerEvent: {}
+[0.000814] (-) JobUnselected: {'identifier': 'finalproj125'}
+[0.000920] (-) JobUnselected: {'identifier': 'finalproj125_interfaces'}
+[0.000951] (xarmrob_interfaces) JobQueued: {'identifier': 'xarmrob_interfaces', 'dependencies': OrderedDict()}
+[0.000977] (xarmrob) JobQueued: {'identifier': 'xarmrob', 'dependencies': OrderedDict({'xarmrob_interfaces': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces'})}
+[0.001006] (xarmrob_interfaces) JobStarted: {'identifier': 'xarmrob_interfaces'}
+[0.010967] (xarmrob_interfaces) JobProgress: {'identifier': 'xarmrob_interfaces', 'progress': 'cmake'}
+[0.011876] (xarmrob_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces'], 'cwd': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces', 'env': OrderedDict({'PROFILEHOME': '', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'KDE_FULL_SESSION': 'true', 'LANGUAGE': '', 'USER': 'aansari', 'PAM_KWALLET5_LOGIN': '/run/user/1000/kwallet5.socket', 'LC_TIME': 'en_US.UTF-8', 'QT_SCREEN_SCALE_FACTORS': 'eDP-1=1.25;HDMI-1=1.25;', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1842', 'XDG_SESSION_TYPE': 'x11', 'XCURSOR_SIZE': '24', 'KONSOLE_VERSION': '230805', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib:/home/aansari/ros2_prac/install/mobrob_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aansari', 'KDE_APPLICATIONS_AS_SCOPE': '1', 'OLDPWD': '/home/aansari', 'DESKTOP_SESSION': 'plasma', 'ROS_PYTHON_VERSION': '3', 'SHELL_SESSION_ID': '3afa1d799b43407295a193356ee88bde', 'GTK_RC_FILES': '/etc/gtk/gtkrc:/home/aansari/.gtkrc:/home/aansari/.config/gtkrc', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'SDL_IM_MODULE': 'fcitx', 'KDE_SESSION_VERSION': '5', 'LC_MONETARY': 'en_US.UTF-8', 'KONSOLE_DBUS_SESSION': '/Sessions/1', 'MANAGERPID': '1714', 'SYSTEMD_EXEC_PID': '1996', 'SSH_ASKPASS': '/usr/bin/ksshaskpass', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'KONSOLE_DBUS_WINDOW': '/Windows/1', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install:/home/aansari/ros2_prac/install', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'aansari', 'WINDOWID': '85983245', 'QT_AUTO_SCREEN_SCALE_FACTOR': '0', 'JOURNAL_STREAM': '8:16702', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'COLORFGBG': '15;0', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'GTK2_RC_FILES': '/etc/gtk-2.0/gtkrc:/home/aansari/.gtkrc-2.0:/home/aansari/.config/gtkrc-2.0', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-ansari:@/tmp/.ICE-unix/1960,unix/ahmed-ansari:/tmp/.ICE-unix/1960', 'INVOCATION_ID': '0b00d6cedd63448198a31a1647aa1ef6', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XCURSOR_THEME': 'breeze_cursors', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'KDE', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'KDE', 'XAUTHORITY': '/tmp/xauth_fbmsNC', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-QWgBT9oZCw9C/agent.1754', 'ROS_DOMAIN_ID': '125', 'AMENT_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'KONSOLE_DBUS_SERVICE': ':1.205', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '2', 'PWD': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces', 'XDG_CONFIG_DIRS': '/home/aansari/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/plasma:/home/aansari/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'KDE_SESSION_UID': '1000', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/mobrob:/opt/ros/jazzy'}), 'shell': False}
+[0.035074] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099467] (-) TimerEvent: {}
+[0.166736] (xarmrob_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.177805] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)\n'}
+[0.199579] (-) TimerEvent: {}
+[0.212772] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.225771] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.242262] (xarmrob_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.260032] (xarmrob_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299704] (-) TimerEvent: {}
+[0.367416] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.399810] (-) TimerEvent: {}
+[0.408550] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.442022] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.5 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[0.477415] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found map_msgs: 2.4.1 (/opt/ros/jazzy/share/map_msgs/cmake)\n'}
+[0.499910] (-) TimerEvent: {}
+[0.520916] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.532081] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.600023] (-) TimerEvent: {}
+[0.700338] (-) TimerEvent: {}
+[0.800635] (-) TimerEvent: {}
+[0.900965] (-) TimerEvent: {}
+[0.979535] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.001070] (-) TimerEvent: {}
+[1.101322] (-) TimerEvent: {}
+[1.201666] (-) TimerEvent: {}
+[1.300704] (xarmrob_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.301743] (-) TimerEvent: {}
+[1.402040] (-) TimerEvent: {}
+[1.429646] (xarmrob_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.432498] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.502159] (-) TimerEvent: {}
+[1.603310] (-) TimerEvent: {}
+[1.703709] (-) TimerEvent: {}
+[1.804044] (-) TimerEvent: {}
+[1.902052] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.904122] (-) TimerEvent: {}
+[1.973284] (xarmrob_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.004273] (-) TimerEvent: {}
+[2.007104] (xarmrob_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.010442] (xarmrob_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.016665] (xarmrob_interfaces) StdoutLine: {'line': b'-- Configuring done (2.0s)\n'}
+[2.104391] (-) TimerEvent: {}
+[2.112448] (xarmrob_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.134953] (xarmrob_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces\n'}
+[2.147818] (xarmrob_interfaces) CommandEnded: {'returncode': 0}
+[2.148625] (xarmrob_interfaces) JobProgress: {'identifier': 'xarmrob_interfaces', 'progress': 'build'}
+[2.149849] (xarmrob_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces', 'env': OrderedDict({'PROFILEHOME': '', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'KDE_FULL_SESSION': 'true', 'LANGUAGE': '', 'USER': 'aansari', 'PAM_KWALLET5_LOGIN': '/run/user/1000/kwallet5.socket', 'LC_TIME': 'en_US.UTF-8', 'QT_SCREEN_SCALE_FACTORS': 'eDP-1=1.25;HDMI-1=1.25;', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1842', 'XDG_SESSION_TYPE': 'x11', 'XCURSOR_SIZE': '24', 'KONSOLE_VERSION': '230805', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib:/home/aansari/ros2_prac/install/mobrob_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aansari', 'KDE_APPLICATIONS_AS_SCOPE': '1', 'OLDPWD': '/home/aansari', 'DESKTOP_SESSION': 'plasma', 'ROS_PYTHON_VERSION': '3', 'SHELL_SESSION_ID': '3afa1d799b43407295a193356ee88bde', 'GTK_RC_FILES': '/etc/gtk/gtkrc:/home/aansari/.gtkrc:/home/aansari/.config/gtkrc', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'SDL_IM_MODULE': 'fcitx', 'KDE_SESSION_VERSION': '5', 'LC_MONETARY': 'en_US.UTF-8', 'KONSOLE_DBUS_SESSION': '/Sessions/1', 'MANAGERPID': '1714', 'SYSTEMD_EXEC_PID': '1996', 'SSH_ASKPASS': '/usr/bin/ksshaskpass', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'KONSOLE_DBUS_WINDOW': '/Windows/1', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install:/home/aansari/ros2_prac/install', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'aansari', 'WINDOWID': '85983245', 'QT_AUTO_SCREEN_SCALE_FACTOR': '0', 'JOURNAL_STREAM': '8:16702', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'COLORFGBG': '15;0', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'GTK2_RC_FILES': '/etc/gtk-2.0/gtkrc:/home/aansari/.gtkrc-2.0:/home/aansari/.config/gtkrc-2.0', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-ansari:@/tmp/.ICE-unix/1960,unix/ahmed-ansari:/tmp/.ICE-unix/1960', 'INVOCATION_ID': '0b00d6cedd63448198a31a1647aa1ef6', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XCURSOR_THEME': 'breeze_cursors', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'KDE', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'KDE', 'XAUTHORITY': '/tmp/xauth_fbmsNC', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-QWgBT9oZCw9C/agent.1754', 'ROS_DOMAIN_ID': '125', 'AMENT_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'KONSOLE_DBUS_SERVICE': ':1.205', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '2', 'PWD': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces', 'XDG_CONFIG_DIRS': '/home/aansari/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/plasma:/home/aansari/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'KDE_SESSION_UID': '1000', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/mobrob:/opt/ros/jazzy'}), 'shell': False}
+[2.204510] (-) TimerEvent: {}
+[2.219362] (xarmrob_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.229728] (xarmrob_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_xarmrob_interfaces\n'}
+[2.304619] (-) TimerEvent: {}
+[2.404952] (-) TimerEvent: {}
+[2.505300] (-) TimerEvent: {}
+[2.605633] (-) TimerEvent: {}
+[2.622462] (xarmrob_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.660525] (xarmrob_interfaces) StdoutLine: {'line': b'writing xarmrob_interfaces.egg-info/PKG-INFO\n'}
+[2.661225] (xarmrob_interfaces) StdoutLine: {'line': b'writing dependency_links to xarmrob_interfaces.egg-info/dependency_links.txt\n'}
+[2.661724] (xarmrob_interfaces) StdoutLine: {'line': b'writing top-level names to xarmrob_interfaces.egg-info/top_level.txt\n'}
+[2.705741] (-) TimerEvent: {}
+[2.772174] (xarmrob_interfaces) StdoutLine: {'line': b"reading manifest file 'xarmrob_interfaces.egg-info/SOURCES.txt'\n"}
+[2.773881] (xarmrob_interfaces) StdoutLine: {'line': b"writing manifest file 'xarmrob_interfaces.egg-info/SOURCES.txt'\n"}
+[2.805845] (-) TimerEvent: {}
+[2.822532] (xarmrob_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_xarmrob_interfaces_egg\n'}
+[2.891052] (xarmrob_interfaces) StdoutLine: {'line': b'[  1%] Built target xarmrob_interfaces__rosidl_generator_type_description\n'}
+[2.905137] (xarmrob_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.905928] (-) TimerEvent: {}
+[2.920265] (xarmrob_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.006052] (-) TimerEvent: {}
+[3.106410] (-) TimerEvent: {}
+[3.206762] (-) TimerEvent: {}
+[3.307105] (-) TimerEvent: {}
+[3.407482] (-) TimerEvent: {}
+[3.507800] (-) TimerEvent: {}
+[3.608108] (-) TimerEvent: {}
+[3.708435] (-) TimerEvent: {}
+[3.808747] (-) TimerEvent: {}
+[3.909091] (-) TimerEvent: {}
+[4.009436] (-) TimerEvent: {}
+[4.109776] (-) TimerEvent: {}
+[4.210104] (-) TimerEvent: {}
+[4.310444] (-) TimerEvent: {}
+[4.410771] (-) TimerEvent: {}
+[4.511086] (-) TimerEvent: {}
+[4.611434] (-) TimerEvent: {}
+[4.714374] (-) TimerEvent: {}
+[4.814761] (-) TimerEvent: {}
+[4.882566] (xarmrob_interfaces) StdoutLine: {'line': b'[  2%] Built target xarmrob_interfaces__cpp\n'}
+[4.914854] (-) TimerEvent: {}
+[5.016095] (-) TimerEvent: {}
+[5.116969] (-) TimerEvent: {}
+[5.217306] (-) TimerEvent: {}
+[5.236085] (xarmrob_interfaces) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_joint_command__description.c.o\x1b[0m\n'}
+[5.236594] (xarmrob_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_gripper_command__description.c.o\x1b[0m\n'}
+[5.236859] (xarmrob_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_joint_command__functions.c.o\x1b[0m\n'}
+[5.237173] (xarmrob_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_joint_command__type_support.c.o\x1b[0m\n'}
+[5.317715] (-) TimerEvent: {}
+[5.344991] (xarmrob_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_gripper_command__functions.c.o\x1b[0m\n'}
+[5.400313] (xarmrob_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_gripper_command__type_support.c.o\x1b[0m\n'}
+[5.412735] (xarmrob_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_joint_location__description.c.o\x1b[0m\n'}
+[5.417838] (-) TimerEvent: {}
+[5.421315] (xarmrob_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_joint_location__functions.c.o\x1b[0m\n'}
+[5.485770] (xarmrob_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_joint_location__type_support.c.o\x1b[0m\n'}
+[5.487386] (xarmrob_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_point_xyz__description.c.o\x1b[0m\n'}
+[5.516103] (xarmrob_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_point_xyz__functions.c.o\x1b[0m\n'}
+[5.517943] (-) TimerEvent: {}
+[5.557057] (xarmrob_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/msg/detail/me439_point_xyz__type_support.c.o\x1b[0m\n'}
+[5.571513] (xarmrob_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/action/detail/me439_move_to_target__description.c.o\x1b[0m\n'}
+[5.594937] (xarmrob_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/action/detail/me439_move_to_target__functions.c.o\x1b[0m\n'}
+[5.619325] (-) TimerEvent: {}
+[5.637731] (xarmrob_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/action/detail/me439_move_to_target__type_support.c.o\x1b[0m\n'}
+[5.647855] (xarmrob_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/action/detail/operate_gripper__description.c.o\x1b[0m\n'}
+[5.719465] (-) TimerEvent: {}
+[5.756461] (xarmrob_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/action/detail/operate_gripper__functions.c.o\x1b[0m\n'}
+[5.819584] (-) TimerEvent: {}
+[5.823151] (xarmrob_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/action/detail/operate_gripper__type_support.c.o\x1b[0m\n'}
+[5.884768] (xarmrob_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__description.c.o\x1b[0m\n'}
+[5.921320] (-) TimerEvent: {}
+[5.944207] (xarmrob_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__functions.c.o\x1b[0m\n'}
+[6.021399] (xarmrob_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support.c.o\x1b[0m\n'}
+[6.021738] (-) TimerEvent: {}
+[6.060668] (xarmrob_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__description.c.o\x1b[0m\n'}
+[6.121872] (-) TimerEvent: {}
+[6.129338] (xarmrob_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__functions.c.o\x1b[0m\n'}
+[6.152622] (xarmrob_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__type_support.c.o\x1b[0m\n'}
+[6.222001] (-) TimerEvent: {}
+[6.267774] (xarmrob_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking C shared library libxarmrob_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[6.322121] (-) TimerEvent: {}
+[6.339949] (xarmrob_interfaces) StdoutLine: {'line': b'[ 26%] Built target xarmrob_interfaces__rosidl_generator_c\n'}
+[6.364145] (xarmrob_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.364553] (xarmrob_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.364797] (xarmrob_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.365011] (xarmrob_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.422519] (-) TimerEvent: {}
+[6.522888] (-) TimerEvent: {}
+[6.623269] (-) TimerEvent: {}
+[6.723612] (-) TimerEvent: {}
+[6.825427] (-) TimerEvent: {}
+[6.925816] (-) TimerEvent: {}
+[7.026994] (-) TimerEvent: {}
+[7.129295] (-) TimerEvent: {}
+[7.229635] (-) TimerEvent: {}
+[7.329972] (-) TimerEvent: {}
+[7.430299] (-) TimerEvent: {}
+[7.533297] (-) TimerEvent: {}
+[7.633634] (-) TimerEvent: {}
+[7.733997] (-) TimerEvent: {}
+[7.834380] (-) TimerEvent: {}
+[7.934754] (-) TimerEvent: {}
+[8.038588] (-) TimerEvent: {}
+[8.138964] (-) TimerEvent: {}
+[8.239304] (-) TimerEvent: {}
+[8.339653] (-) TimerEvent: {}
+[8.440006] (-) TimerEvent: {}
+[8.540358] (-) TimerEvent: {}
+[8.571301] (xarmrob_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/msg/me439_joint_command__type_support.cpp.o\x1b[0m\n'}
+[8.640466] (-) TimerEvent: {}
+[8.741298] (-) TimerEvent: {}
+[8.842592] (-) TimerEvent: {}
+[8.943187] (-) TimerEvent: {}
+[9.044588] (-) TimerEvent: {}
+[9.144961] (-) TimerEvent: {}
+[9.245784] (-) TimerEvent: {}
+[9.289186] (xarmrob_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/msg/detail/me439_joint_command__type_support.c.o\x1b[0m\n'}
+[9.346477] (-) TimerEvent: {}
+[9.418388] (xarmrob_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/msg/detail/me439_gripper_command__type_support.c.o\x1b[0m\n'}
+[9.446597] (-) TimerEvent: {}
+[9.528360] (xarmrob_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/msg/detail/me439_joint_location__type_support.c.o\x1b[0m\n'}
+[9.546714] (-) TimerEvent: {}
+[9.649441] (-) TimerEvent: {}
+[9.649796] (xarmrob_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/msg/detail/me439_point_xyz__type_support.c.o\x1b[0m\n'}
+[9.728812] (xarmrob_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/msg/me439_gripper_command__type_support.cpp.o\x1b[0m\n'}
+[9.749563] (-) TimerEvent: {}
+[9.758330] (xarmrob_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/action/detail/me439_move_to_target__type_support.c.o\x1b[0m\n'}
+[9.849691] (-) TimerEvent: {}
+[9.953335] (-) TimerEvent: {}
+[9.968419] (xarmrob_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/action/detail/operate_gripper__type_support.c.o\x1b[0m\n'}
+[10.053455] (-) TimerEvent: {}
+[10.153845] (-) TimerEvent: {}
+[10.161530] (xarmrob_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support.c.o\x1b[0m\n'}
+[10.253953] (-) TimerEvent: {}
+[10.320801] (xarmrob_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__type_support.c.o\x1b[0m\n'}
+[10.355345] (-) TimerEvent: {}
+[10.455721] (-) TimerEvent: {}
+[10.467923] (xarmrob_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/msg/detail/dds_fastrtps/me439_joint_command__type_support.cpp.o\x1b[0m\n'}
+[10.478081] (xarmrob_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libxarmrob_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.556400] (-) TimerEvent: {}
+[10.562095] (xarmrob_interfaces) StdoutLine: {'line': b'[ 41%] Built target xarmrob_interfaces__rosidl_typesupport_introspection_c\n'}
+[10.580324] (xarmrob_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/msg/detail/dds_fastrtps/me439_gripper_command__type_support.cpp.o\x1b[0m\n'}
+[10.656531] (-) TimerEvent: {}
+[10.703039] (xarmrob_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/msg/me439_joint_location__type_support.cpp.o\x1b[0m\n'}
+[10.756656] (-) TimerEvent: {}
+[10.759126] (xarmrob_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/msg/detail/me439_joint_command__type_support_c.cpp.o\x1b[0m\n'}
+[10.856792] (-) TimerEvent: {}
+[10.958430] (-) TimerEvent: {}
+[11.058843] (-) TimerEvent: {}
+[11.159223] (-) TimerEvent: {}
+[11.261625] (-) TimerEvent: {}
+[11.369465] (-) TimerEvent: {}
+[11.469883] (-) TimerEvent: {}
+[11.570301] (-) TimerEvent: {}
+[11.638714] (xarmrob_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/msg/me439_point_xyz__type_support.cpp.o\x1b[0m\n'}
+[11.670428] (-) TimerEvent: {}
+[11.771198] (-) TimerEvent: {}
+[11.872697] (-) TimerEvent: {}
+[11.976322] (-) TimerEvent: {}
+[12.076773] (-) TimerEvent: {}
+[12.137600] (xarmrob_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/msg/detail/me439_gripper_command__type_support_c.cpp.o\x1b[0m\n'}
+[12.176908] (-) TimerEvent: {}
+[12.225790] (xarmrob_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/msg/detail/dds_fastrtps/me439_joint_location__type_support.cpp.o\x1b[0m\n'}
+[12.263319] (xarmrob_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.277001] (-) TimerEvent: {}
+[12.377604] (-) TimerEvent: {}
+[12.477974] (-) TimerEvent: {}
+[12.574339] (xarmrob_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/action/me439_move_to_target__type_support.cpp.o\x1b[0m\n'}
+[12.578081] (-) TimerEvent: {}
+[12.678615] (-) TimerEvent: {}
+[12.782449] (-) TimerEvent: {}
+[12.886313] (-) TimerEvent: {}
+[12.986705] (-) TimerEvent: {}
+[13.087093] (-) TimerEvent: {}
+[13.187487] (-) TimerEvent: {}
+[13.287866] (-) TimerEvent: {}
+[13.388267] (-) TimerEvent: {}
+[13.488657] (-) TimerEvent: {}
+[13.589114] (-) TimerEvent: {}
+[13.625366] (xarmrob_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/msg/detail/me439_joint_location__type_support_c.cpp.o\x1b[0m\n'}
+[13.692322] (-) TimerEvent: {}
+[13.792702] (-) TimerEvent: {}
+[13.794985] (xarmrob_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/msg/detail/dds_fastrtps/me439_point_xyz__type_support.cpp.o\x1b[0m\n'}
+[13.892822] (-) TimerEvent: {}
+[13.993209] (-) TimerEvent: {}
+[14.093620] (-) TimerEvent: {}
+[14.194225] (-) TimerEvent: {}
+[14.294672] (-) TimerEvent: {}
+[14.335563] (xarmrob_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/msg/me439_joint_command__type_support.cpp.o\x1b[0m\n'}
+[14.397322] (-) TimerEvent: {}
+[14.457580] (xarmrob_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/msg/me439_gripper_command__type_support.cpp.o\x1b[0m\n'}
+[14.497451] (-) TimerEvent: {}
+[14.585735] (xarmrob_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/msg/me439_joint_location__type_support.cpp.o\x1b[0m\n'}
+[14.600325] (-) TimerEvent: {}
+[14.701433] (-) TimerEvent: {}
+[14.717115] (xarmrob_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/msg/me439_point_xyz__type_support.cpp.o\x1b[0m\n'}
+[14.717602] (xarmrob_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/action/operate_gripper__type_support.cpp.o\x1b[0m\n'}
+[14.804319] (-) TimerEvent: {}
+[14.841402] (xarmrob_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/action/me439_move_to_target__type_support.cpp.o\x1b[0m\n'}
+[14.904442] (-) TimerEvent: {}
+[15.005010] (-) TimerEvent: {}
+[15.023976] (xarmrob_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/action/operate_gripper__type_support.cpp.o\x1b[0m\n'}
+[15.105362] (-) TimerEvent: {}
+[15.126180] (xarmrob_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/msg/detail/me439_point_xyz__type_support_c.cpp.o\x1b[0m\n'}
+[15.199292] (xarmrob_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/srv/me439_x_arm_forward_kinematics__type_support.cpp.o\x1b[0m\n'}
+[15.206320] (-) TimerEvent: {}
+[15.307126] (-) TimerEvent: {}
+[15.322260] (xarmrob_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/action/detail/dds_fastrtps/me439_move_to_target__type_support.cpp.o\x1b[0m\n'}
+[15.333533] (xarmrob_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xarmrob_interfaces/srv/me439_x_arm_inverse_kinematics__type_support.cpp.o\x1b[0m\n'}
+[15.408322] (-) TimerEvent: {}
+[15.463642] (xarmrob_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libxarmrob_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.508457] (-) TimerEvent: {}
+[15.571681] (xarmrob_interfaces) StdoutLine: {'line': b'[ 62%] Built target xarmrob_interfaces__rosidl_typesupport_c\n'}
+[15.591391] (xarmrob_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/action/detail/me439_move_to_target__type_support_c.cpp.o\x1b[0m\n'}
+[15.608565] (-) TimerEvent: {}
+[15.708981] (-) TimerEvent: {}
+[15.811460] (-) TimerEvent: {}
+[15.911877] (-) TimerEvent: {}
+[16.012318] (-) TimerEvent: {}
+[16.115328] (-) TimerEvent: {}
+[16.215872] (-) TimerEvent: {}
+[16.316327] (-) TimerEvent: {}
+[16.417166] (-) TimerEvent: {}
+[16.520490] (-) TimerEvent: {}
+[16.548400] (xarmrob_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/srv/me439_x_arm_forward_kinematics__type_support.cpp.o\x1b[0m\n'}
+[16.620624] (-) TimerEvent: {}
+[16.721407] (-) TimerEvent: {}
+[16.778980] (xarmrob_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/action/detail/dds_fastrtps/operate_gripper__type_support.cpp.o\x1b[0m\n'}
+[16.824321] (-) TimerEvent: {}
+[16.924754] (-) TimerEvent: {}
+[17.025186] (-) TimerEvent: {}
+[17.125646] (-) TimerEvent: {}
+[17.226181] (-) TimerEvent: {}
+[17.327534] (-) TimerEvent: {}
+[17.362338] (xarmrob_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/action/detail/operate_gripper__type_support_c.cpp.o\x1b[0m\n'}
+[17.427659] (-) TimerEvent: {}
+[17.528257] (-) TimerEvent: {}
+[17.628845] (-) TimerEvent: {}
+[17.730461] (-) TimerEvent: {}
+[17.830906] (-) TimerEvent: {}
+[17.864413] (xarmrob_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xarmrob_interfaces/srv/me439_x_arm_inverse_kinematics__type_support.cpp.o\x1b[0m\n'}
+[17.931037] (-) TimerEvent: {}
+[18.032322] (-) TimerEvent: {}
+[18.132740] (-) TimerEvent: {}
+[18.236507] (-) TimerEvent: {}
+[18.336918] (-) TimerEvent: {}
+[18.412089] (xarmrob_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/srv/detail/dds_fastrtps/me439_x_arm_forward_kinematics__type_support.cpp.o\x1b[0m\n'}
+[18.437050] (-) TimerEvent: {}
+[18.537734] (-) TimerEvent: {}
+[18.638440] (-) TimerEvent: {}
+[18.741638] (-) TimerEvent: {}
+[18.842226] (-) TimerEvent: {}
+[18.945327] (-) TimerEvent: {}
+[19.045757] (-) TimerEvent: {}
+[19.145858] (xarmrob_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libxarmrob_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[19.146776] (-) TimerEvent: {}
+[19.202360] (xarmrob_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support_c.cpp.o\x1b[0m\n'}
+[19.246387] (-) TimerEvent: {}
+[19.349452] (-) TimerEvent: {}
+[19.366957] (xarmrob_interfaces) StdoutLine: {'line': b'[ 70%] Built target xarmrob_interfaces__rosidl_typesupport_cpp\n'}
+[19.386201] (xarmrob_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/srv/detail/dds_fastrtps/me439_x_arm_inverse_kinematics__type_support.cpp.o\x1b[0m\n'}
+[19.452318] (-) TimerEvent: {}
+[19.552718] (-) TimerEvent: {}
+[19.653138] (-) TimerEvent: {}
+[19.753635] (-) TimerEvent: {}
+[19.854062] (-) TimerEvent: {}
+[19.866694] (xarmrob_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__type_support_c.cpp.o\x1b[0m\n'}
+[19.954192] (-) TimerEvent: {}
+[20.054803] (-) TimerEvent: {}
+[20.157463] (-) TimerEvent: {}
+[20.257887] (-) TimerEvent: {}
+[20.358320] (-) TimerEvent: {}
+[20.461503] (-) TimerEvent: {}
+[20.522396] (xarmrob_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[20.564305] (-) TimerEvent: {}
+[20.664685] (-) TimerEvent: {}
+[20.765083] (-) TimerEvent: {}
+[20.865489] (-) TimerEvent: {}
+[20.966264] (-) TimerEvent: {}
+[21.066656] (-) TimerEvent: {}
+[21.167432] (-) TimerEvent: {}
+[21.267758] (-) TimerEvent: {}
+[21.368491] (-) TimerEvent: {}
+[21.469225] (-) TimerEvent: {}
+[21.563730] (xarmrob_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libxarmrob_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[21.569339] (-) TimerEvent: {}
+[21.587075] (xarmrob_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libxarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[21.669478] (-) TimerEvent: {}
+[21.755963] (xarmrob_interfaces) StdoutLine: {'line': b'[ 75%] Built target xarmrob_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[21.769586] (-) TimerEvent: {}
+[21.799061] (xarmrob_interfaces) StdoutLine: {'line': b'[ 75%] Built target xarmrob_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[21.869685] (-) TimerEvent: {}
+[21.972319] (-) TimerEvent: {}
+[22.045432] (xarmrob_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/msg/detail/me439_joint_command__type_support.cpp.o\x1b[0m\n'}
+[22.045771] (xarmrob_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/msg/detail/me439_joint_location__type_support.cpp.o\x1b[0m\n'}
+[22.045975] (xarmrob_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/msg/detail/me439_gripper_command__type_support.cpp.o\x1b[0m\n'}
+[22.046281] (xarmrob_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/msg/detail/me439_point_xyz__type_support.cpp.o\x1b[0m\n'}
+[22.072434] (-) TimerEvent: {}
+[22.172881] (-) TimerEvent: {}
+[22.276443] (-) TimerEvent: {}
+[22.376849] (-) TimerEvent: {}
+[22.480320] (-) TimerEvent: {}
+[22.580723] (-) TimerEvent: {}
+[22.681143] (-) TimerEvent: {}
+[22.781563] (-) TimerEvent: {}
+[22.883336] (-) TimerEvent: {}
+[22.983740] (-) TimerEvent: {}
+[23.032891] (xarmrob_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/action/detail/me439_move_to_target__type_support.cpp.o\x1b[0m\n'}
+[23.041559] (xarmrob_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/action/detail/operate_gripper__type_support.cpp.o\x1b[0m\n'}
+[23.083865] (-) TimerEvent: {}
+[23.099316] (xarmrob_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support.cpp.o\x1b[0m\n'}
+[23.183989] (-) TimerEvent: {}
+[23.241190] (xarmrob_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/xarmrob_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__type_support.cpp.o\x1b[0m\n'}
+[23.284108] (-) TimerEvent: {}
+[23.384521] (-) TimerEvent: {}
+[23.484936] (-) TimerEvent: {}
+[23.585336] (-) TimerEvent: {}
+[23.685768] (-) TimerEvent: {}
+[23.789495] (-) TimerEvent: {}
+[23.889914] (-) TimerEvent: {}
+[23.990322] (-) TimerEvent: {}
+[24.090721] (-) TimerEvent: {}
+[24.191142] (-) TimerEvent: {}
+[24.291573] (-) TimerEvent: {}
+[24.391986] (-) TimerEvent: {}
+[24.492418] (-) TimerEvent: {}
+[24.592829] (-) TimerEvent: {}
+[24.694606] (-) TimerEvent: {}
+[24.795328] (-) TimerEvent: {}
+[24.895709] (-) TimerEvent: {}
+[24.996108] (-) TimerEvent: {}
+[25.033228] (xarmrob_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libxarmrob_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[25.096233] (-) TimerEvent: {}
+[25.159675] (xarmrob_interfaces) StdoutLine: {'line': b'[ 84%] Built target xarmrob_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[25.184159] (xarmrob_interfaces) StdoutLine: {'line': b'[ 84%] Built target xarmrob_interfaces\n'}
+[25.196339] (-) TimerEvent: {}
+[25.209837] (xarmrob_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[25.296452] (-) TimerEvent: {}
+[25.396749] (-) TimerEvent: {}
+[25.497058] (-) TimerEvent: {}
+[25.597354] (-) TimerEvent: {}
+[25.697654] (-) TimerEvent: {}
+[25.797946] (-) TimerEvent: {}
+[25.898234] (-) TimerEvent: {}
+[25.998548] (-) TimerEvent: {}
+[26.098850] (-) TimerEvent: {}
+[26.199159] (-) TimerEvent: {}
+[26.299482] (-) TimerEvent: {}
+[26.399790] (-) TimerEvent: {}
+[26.500092] (-) TimerEvent: {}
+[26.600426] (-) TimerEvent: {}
+[26.700756] (-) TimerEvent: {}
+[26.801076] (-) TimerEvent: {}
+[26.901413] (-) TimerEvent: {}
+[27.001715] (-) TimerEvent: {}
+[27.102041] (-) TimerEvent: {}
+[27.202306] (-) TimerEvent: {}
+[27.302607] (-) TimerEvent: {}
+[27.402914] (-) TimerEvent: {}
+[27.503221] (-) TimerEvent: {}
+[27.603506] (-) TimerEvent: {}
+[27.703799] (-) TimerEvent: {}
+[27.741641] (xarmrob_interfaces) StdoutLine: {'line': b'[ 85%] Built target xarmrob_interfaces__py\n'}
+[27.793735] (xarmrob_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/msg/_me439_joint_location_s.c.o\x1b[0m\n'}
+[27.794079] (xarmrob_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/msg/_me439_gripper_command_s.c.o\x1b[0m\n'}
+[27.795038] (xarmrob_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/msg/_me439_joint_command_s.c.o\x1b[0m\n'}
+[27.795403] (xarmrob_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/msg/_me439_point_xyz_s.c.o\x1b[0m\n'}
+[27.803915] (-) TimerEvent: {}
+[27.907496] (-) TimerEvent: {}
+[28.007916] (-) TimerEvent: {}
+[28.108327] (-) TimerEvent: {}
+[28.203001] (xarmrob_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/action/_me439_move_to_target_s.c.o\x1b[0m\n'}
+[28.204838] (xarmrob_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/action/_operate_gripper_s.c.o\x1b[0m\n'}
+[28.210933] (-) TimerEvent: {}
+[28.277319] (xarmrob_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/srv/_me439_x_arm_forward_kinematics_s.c.o\x1b[0m\n'}
+[28.311054] (-) TimerEvent: {}
+[28.312078] (xarmrob_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xarmrob_interfaces/srv/_me439_x_arm_inverse_kinematics_s.c.o\x1b[0m\n'}
+[28.411175] (-) TimerEvent: {}
+[28.514320] (-) TimerEvent: {}
+[28.614716] (-) TimerEvent: {}
+[28.715118] (-) TimerEvent: {}
+[28.815553] (-) TimerEvent: {}
+[28.868268] (xarmrob_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library libxarmrob_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[28.915665] (-) TimerEvent: {}
+[28.934512] (xarmrob_interfaces) StdoutLine: {'line': b'[ 94%] Built target xarmrob_interfaces__rosidl_generator_py\n'}
+[28.979421] (xarmrob_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/xarmrob_interfaces/_xarmrob_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[28.982733] (xarmrob_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/xarmrob_interfaces/_xarmrob_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[28.983215] (xarmrob_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/xarmrob_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/xarmrob_interfaces/_xarmrob_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[29.017328] (-) TimerEvent: {}
+[29.117741] (-) TimerEvent: {}
+[29.218149] (-) TimerEvent: {}
+[29.318552] (-) TimerEvent: {}
+[29.420323] (-) TimerEvent: {}
+[29.520730] (-) TimerEvent: {}
+[29.538398] (xarmrob_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[29.578038] (xarmrob_interfaces) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[29.579111] (xarmrob_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[29.615501] (xarmrob_interfaces) StdoutLine: {'line': b'[100%] Built target xarmrob_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[29.620863] (-) TimerEvent: {}
+[29.636887] (xarmrob_interfaces) StdoutLine: {'line': b'[100%] Built target xarmrob_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[29.637311] (xarmrob_interfaces) StdoutLine: {'line': b'[100%] Built target xarmrob_interfaces_s__rosidl_typesupport_c\n'}
+[29.653440] (xarmrob_interfaces) CommandEnded: {'returncode': 0}
+[29.654642] (xarmrob_interfaces) JobProgress: {'identifier': 'xarmrob_interfaces', 'progress': 'install'}
+[29.665852] (xarmrob_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces'], 'cwd': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces', 'env': OrderedDict({'PROFILEHOME': '', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'KDE_FULL_SESSION': 'true', 'LANGUAGE': '', 'USER': 'aansari', 'PAM_KWALLET5_LOGIN': '/run/user/1000/kwallet5.socket', 'LC_TIME': 'en_US.UTF-8', 'QT_SCREEN_SCALE_FACTORS': 'eDP-1=1.25;HDMI-1=1.25;', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1842', 'XDG_SESSION_TYPE': 'x11', 'XCURSOR_SIZE': '24', 'KONSOLE_VERSION': '230805', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib:/home/aansari/ros2_prac/install/mobrob_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aansari', 'KDE_APPLICATIONS_AS_SCOPE': '1', 'OLDPWD': '/home/aansari', 'DESKTOP_SESSION': 'plasma', 'ROS_PYTHON_VERSION': '3', 'SHELL_SESSION_ID': '3afa1d799b43407295a193356ee88bde', 'GTK_RC_FILES': '/etc/gtk/gtkrc:/home/aansari/.gtkrc:/home/aansari/.config/gtkrc', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'SDL_IM_MODULE': 'fcitx', 'KDE_SESSION_VERSION': '5', 'LC_MONETARY': 'en_US.UTF-8', 'KONSOLE_DBUS_SESSION': '/Sessions/1', 'MANAGERPID': '1714', 'SYSTEMD_EXEC_PID': '1996', 'SSH_ASKPASS': '/usr/bin/ksshaskpass', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'KONSOLE_DBUS_WINDOW': '/Windows/1', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install:/home/aansari/ros2_prac/install', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'aansari', 'WINDOWID': '85983245', 'QT_AUTO_SCREEN_SCALE_FACTOR': '0', 'JOURNAL_STREAM': '8:16702', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'COLORFGBG': '15;0', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'GTK2_RC_FILES': '/etc/gtk-2.0/gtkrc:/home/aansari/.gtkrc-2.0:/home/aansari/.config/gtkrc-2.0', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-ansari:@/tmp/.ICE-unix/1960,unix/ahmed-ansari:/tmp/.ICE-unix/1960', 'INVOCATION_ID': '0b00d6cedd63448198a31a1647aa1ef6', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XCURSOR_THEME': 'breeze_cursors', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'KDE', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'KDE', 'XAUTHORITY': '/tmp/xauth_fbmsNC', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-QWgBT9oZCw9C/agent.1754', 'ROS_DOMAIN_ID': '125', 'AMENT_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'KONSOLE_DBUS_SERVICE': ':1.205', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '2', 'PWD': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces', 'XDG_CONFIG_DIRS': '/home/aansari/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/plasma:/home/aansari/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'KDE_SESSION_UID': '1000', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/mobrob:/opt/ros/jazzy'}), 'shell': False}
+[29.675485] (xarmrob_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.676535] (xarmrob_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.677294] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/ament_index/resource_index/rosidl_interfaces/xarmrob_interfaces\n'}
+[29.677706] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439JointCommand.json\n'}
+[29.677973] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439GripperCommand.json\n'}
+[29.688537] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439JointLocation.json\n'}
+[29.688796] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439PointXYZ.json\n'}
+[29.689163] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/action/ME439MoveToTarget.json\n'}
+[29.689465] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/action/OperateGripper.json\n'}
+[29.700093] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/srv/ME439XArmForwardKinematics.json\n'}
+[29.700416] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/srv/ME439XArmInverseKinematics.json\n'}
+[29.702128] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__functions.h\n'}
+[29.702423] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__struct.h\n'}
+[29.702713] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__type_support.h\n'}
+[29.702873] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__functions.h\n'}
+[29.713252] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__struct.h\n'}
+[29.720974] (-) TimerEvent: {}
+[29.723893] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__type_support.h\n'}
+[29.734822] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/me439_move_to_target.h\n'}
+[29.735101] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/operate_gripper.h\n'}
+[29.745322] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__functions.h\n'}
+[29.755259] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__struct.h\n'}
+[29.765284] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__type_support.h\n'}
+[29.775388] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__functions.h\n'}
+[29.775778] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__struct.h\n'}
+[29.776032] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__type_support.h\n'}
+[29.776464] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__functions.h\n'}
+[29.776734] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__struct.h\n'}
+[29.776996] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__type_support.h\n'}
+[29.777250] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__functions.h\n'}
+[29.777512] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__struct.h\n'}
+[29.777838] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__type_support.h\n'}
+[29.778120] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_gripper_command.h\n'}
+[29.788668] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_joint_command.h\n'}
+[29.789010] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_joint_location.h\n'}
+[29.789255] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_point_xyz.h\n'}
+[29.789481] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[29.789696] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__functions.h\n'}
+[29.789916] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__struct.h\n'}
+[29.790123] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support.h\n'}
+[29.790344] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__functions.h\n'}
+[29.790581] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__struct.h\n'}
+[29.790750] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__type_support.h\n'}
+[29.790984] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/me439_x_arm_forward_kinematics.h\n'}
+[29.791205] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/me439_x_arm_inverse_kinematics.h\n'}
+[29.791452] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/library_path.sh\n'}
+[29.791681] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/library_path.dsv\n'}
+[29.792872] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__rosidl_typesupport_fastrtps_c.h\n'}
+[29.793179] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__rosidl_typesupport_fastrtps_c.h\n'}
+[29.804198] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__rosidl_typesupport_fastrtps_c.h\n'}
+[29.814227] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__rosidl_typesupport_fastrtps_c.h\n'}
+[29.814564] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__rosidl_typesupport_fastrtps_c.h\n'}
+[29.814793] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__rosidl_typesupport_fastrtps_c.h\n'}
+[29.815016] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[29.815219] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__rosidl_typesupport_fastrtps_c.h\n'}
+[29.815450] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__rosidl_typesupport_fastrtps_c.h\n'}
+[29.816386] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__builder.hpp\n'}
+[29.816634] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__struct.hpp\n'}
+[29.816866] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__traits.hpp\n'}
+[29.817088] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__type_support.hpp\n'}
+[29.817325] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__builder.hpp\n'}
+[29.821058] (-) TimerEvent: {}
+[29.828156] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__struct.hpp\n'}
+[29.838775] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__traits.hpp\n'}
+[29.848865] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__type_support.hpp\n'}
+[29.858978] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/me439_move_to_target.hpp\n'}
+[29.859341] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/operate_gripper.hpp\n'}
+[29.869280] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__builder.hpp\n'}
+[29.879345] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__struct.hpp\n'}
+[29.889377] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__traits.hpp\n'}
+[29.899516] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__type_support.hpp\n'}
+[29.909642] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__builder.hpp\n'}
+[29.910024] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__struct.hpp\n'}
+[29.910287] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__traits.hpp\n'}
+[29.910550] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__type_support.hpp\n'}
+[29.910817] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__builder.hpp\n'}
+[29.911071] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__struct.hpp\n'}
+[29.911311] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__traits.hpp\n'}
+[29.911542] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__type_support.hpp\n'}
+[29.911757] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__builder.hpp\n'}
+[29.911960] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__struct.hpp\n'}
+[29.912184] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__traits.hpp\n'}
+[29.912436] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__type_support.hpp\n'}
+[29.912670] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_gripper_command.hpp\n'}
+[29.921185] (-) TimerEvent: {}
+[29.923616] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_joint_command.hpp\n'}
+[29.923939] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_joint_location.hpp\n'}
+[29.924150] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/me439_point_xyz.hpp\n'}
+[29.924387] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[29.924614] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__builder.hpp\n'}
+[29.924832] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__struct.hpp\n'}
+[29.925065] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__traits.hpp\n'}
+[29.925264] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support.hpp\n'}
+[29.925484] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__builder.hpp\n'}
+[29.925673] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__struct.hpp\n'}
+[29.925883] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__traits.hpp\n'}
+[29.926103] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__type_support.hpp\n'}
+[29.926408] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/me439_x_arm_forward_kinematics.hpp\n'}
+[29.926640] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/me439_x_arm_inverse_kinematics.hpp\n'}
+[29.927685] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.928007] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.939933] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.949959] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.950339] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.950603] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.950840] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[29.951094] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.951305] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[29.951818] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__rosidl_typesupport_introspection_c.h\n'}
+[29.952097] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__rosidl_typesupport_introspection_c.h\n'}
+[29.962502] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__rosidl_typesupport_introspection_c.h\n'}
+[29.972532] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__rosidl_typesupport_introspection_c.h\n'}
+[29.972862] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__rosidl_typesupport_introspection_c.h\n'}
+[29.973076] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__rosidl_typesupport_introspection_c.h\n'}
+[29.973317] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[29.973549] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__rosidl_typesupport_introspection_c.h\n'}
+[29.973754] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__rosidl_typesupport_introspection_c.h\n'}
+[29.974337] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/me439_move_to_target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.974614] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/action/detail/operate_gripper__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.985152] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_gripper_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.995124] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.995510] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_joint_location__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.995757] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/msg/detail/me439_point_xyz__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.996007] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.996261] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/include/xarmrob_interfaces/xarmrob_interfaces/srv/detail/me439_x_arm_inverse_kinematics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[29.996576] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/pythonpath.sh\n'}
+[29.996833] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/pythonpath.dsv\n'}
+[29.997334] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[29.997581] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[29.997814] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[29.998041] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[29.999310] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/__init__.py\n'}
+[29.999641] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/_xarmrob_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[29.999988] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/_xarmrob_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[30.000245] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/_xarmrob_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[30.000539] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/__init__.py\n'}
+[30.000855] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/_me439_move_to_target.py\n'}
+[30.001609] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/_me439_move_to_target_s.c\n'}
+[30.002143] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/_operate_gripper.py\n'}
+[30.013901] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/_operate_gripper_s.c\n'}
+[30.021366] (-) TimerEvent: {}
+[30.027678] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/__init__.py\n'}
+[30.028088] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_gripper_command.py\n'}
+[30.039345] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_gripper_command_s.c\n'}
+[30.049847] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_joint_command.py\n'}
+[30.050188] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_joint_command_s.c\n'}
+[30.050463] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_joint_location.py\n'}
+[30.050638] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_joint_location_s.c\n'}
+[30.050854] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_point_xyz.py\n'}
+[30.051072] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_point_xyz_s.c\n'}
+[30.051296] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/__init__.py\n'}
+[30.051550] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/_me439_x_arm_forward_kinematics.py\n'}
+[30.051760] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/_me439_x_arm_forward_kinematics_s.c\n'}
+[30.051936] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/_me439_x_arm_inverse_kinematics.py\n'}
+[30.052151] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/_me439_x_arm_inverse_kinematics_s.c\n'}
+[30.052506] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_c.so\n'}
+[30.052764] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[30.053004] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[30.053259] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[30.053692] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[30.054233] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/xarmrob_interfaces_s__rosidl_typesupport_c.so\n'}
+[30.054690] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439JointCommand.idl\n'}
+[30.055019] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439GripperCommand.idl\n'}
+[30.066588] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439JointLocation.idl\n'}
+[30.066968] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439PointXYZ.idl\n'}
+[30.067311] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/action/ME439MoveToTarget.idl\n'}
+[30.067606] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/action/OperateGripper.idl\n'}
+[30.078087] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/srv/ME439XArmForwardKinematics.idl\n'}
+[30.078543] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/srv/ME439XArmInverseKinematics.idl\n'}
+[30.078825] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439JointCommand.msg\n'}
+[30.079084] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439GripperCommand.msg\n'}
+[30.090319] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439JointLocation.msg\n'}
+[30.091220] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/msg/ME439PointXYZ.msg\n'}
+[30.091874] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/action/ME439MoveToTarget.action\n'}
+[30.092073] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/action/OperateGripper.action\n'}
+[30.103871] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/srv/ME439XArmForwardKinematics.srv\n'}
+[30.104264] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/srv/ME439XArmInverseKinematics.srv\n'}
+[30.104617] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/ament_index/resource_index/package_run_dependencies/xarmrob_interfaces\n'}
+[30.105137] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/ament_index/resource_index/parent_prefix_path/xarmrob_interfaces\n'}
+[30.105417] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/ament_prefix_path.sh\n'}
+[30.105787] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/ament_prefix_path.dsv\n'}
+[30.106141] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/path.sh\n'}
+[30.106530] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/environment/path.dsv\n'}
+[30.106910] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/local_setup.bash\n'}
+[30.107300] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/local_setup.sh\n'}
+[30.107717] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/local_setup.zsh\n'}
+[30.108113] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/local_setup.dsv\n'}
+[30.108456] (xarmrob_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/package.dsv\n'}
+[30.120182] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/ament_index/resource_index/packages/xarmrob_interfaces\n'}
+[30.120541] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[30.120794] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.121024] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.121248] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.121433] (-) TimerEvent: {}
+[30.121624] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[30.121859] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[30.122083] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[30.122387] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfacesConfig.cmake\n'}
+[30.122710] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfacesConfig-version.cmake\n'}
+[30.123061] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/package.xml\n'}
+[30.124182] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_generator_c.so\n'}
+[30.125201] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_generator_c.so" to ""\n'}
+[30.126092] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[30.126965] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[30.127879] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[30.129306] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[30.130171] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[30.130972] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[30.131829] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_c.so\n'}
+[30.132609] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[30.133679] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[30.135406] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[30.136385] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_cpp.so\n'}
+[30.137691] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[30.221534] (-) TimerEvent: {}
+[30.237568] (xarmrob_interfaces) StdoutLine: {'line': b"Listing '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces'...\n"}
+[30.237912] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/__init__.py'...\n"}
+[30.238088] (xarmrob_interfaces) StdoutLine: {'line': b"Listing '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action'...\n"}
+[30.238254] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/__init__.py'...\n"}
+[30.238426] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/_me439_move_to_target.py'...\n"}
+[30.238580] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/action/_operate_gripper.py'...\n"}
+[30.238730] (xarmrob_interfaces) StdoutLine: {'line': b"Listing '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg'...\n"}
+[30.238880] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/__init__.py'...\n"}
+[30.239035] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_gripper_command.py'...\n"}
+[30.239190] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_joint_command.py'...\n"}
+[30.239369] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_joint_location.py'...\n"}
+[30.239526] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/msg/_me439_point_xyz.py'...\n"}
+[30.239693] (xarmrob_interfaces) StdoutLine: {'line': b"Listing '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv'...\n"}
+[30.239865] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/__init__.py'...\n"}
+[30.240037] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/_me439_x_arm_forward_kinematics.py'...\n"}
+[30.240221] (xarmrob_interfaces) StdoutLine: {'line': b"Compiling '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages/xarmrob_interfaces/srv/_me439_x_arm_inverse_kinematics.py'...\n"}
+[30.249107] (xarmrob_interfaces) StdoutLine: {'line': b'-- Installing: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_generator_py.so\n'}
+[30.250269] (xarmrob_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/libxarmrob_interfaces__rosidl_generator_py.so" to ""\n'}
+[30.250663] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_generator_cExport.cmake\n'}
+[30.250896] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[30.251133] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[30.251384] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[30.251598] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_generator_cppExport.cmake\n'}
+[30.251828] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[30.252011] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[30.252264] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[30.252495] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[30.252678] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[30.252902] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[30.253078] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[30.253277] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[30.253552] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[30.253735] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/xarmrob_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[30.253914] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_generator_pyExport.cmake\n'}
+[30.254094] (xarmrob_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/share/xarmrob_interfaces/cmake/export_xarmrob_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[30.255790] (xarmrob_interfaces) CommandEnded: {'returncode': 0}
+[30.293501] (xarmrob_interfaces) JobEnded: {'identifier': 'xarmrob_interfaces', 'rc': 0}
+[30.294361] (xarmrob) JobStarted: {'identifier': 'xarmrob'}
+[30.321652] (-) TimerEvent: {}
+[30.421978] (-) TimerEvent: {}
+[30.522286] (-) TimerEvent: {}
+[30.622581] (-) TimerEvent: {}
+[30.722988] (-) TimerEvent: {}
+[30.823299] (-) TimerEvent: {}
+[30.923597] (-) TimerEvent: {}
+[31.023893] (-) TimerEvent: {}
+[31.124193] (-) TimerEvent: {}
+[31.224493] (-) TimerEvent: {}
+[31.324829] (-) TimerEvent: {}
+[31.332370] (xarmrob) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build'], 'cwd': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob', 'env': {'PROFILEHOME': '', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'KDE_FULL_SESSION': 'true', 'LANGUAGE': '', 'USER': 'aansari', 'PAM_KWALLET5_LOGIN': '/run/user/1000/kwallet5.socket', 'LC_TIME': 'en_US.UTF-8', 'QT_SCREEN_SCALE_FACTORS': 'eDP-1=1.25;HDMI-1=1.25;', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1842', 'XDG_SESSION_TYPE': 'x11', 'XCURSOR_SIZE': '24', 'KONSOLE_VERSION': '230805', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib:/home/aansari/ros2_prac/install/mobrob_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aansari', 'KDE_APPLICATIONS_AS_SCOPE': '1', 'OLDPWD': '/home/aansari', 'DESKTOP_SESSION': 'plasma', 'ROS_PYTHON_VERSION': '3', 'SHELL_SESSION_ID': '3afa1d799b43407295a193356ee88bde', 'GTK_RC_FILES': '/etc/gtk/gtkrc:/home/aansari/.gtkrc:/home/aansari/.config/gtkrc', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'SDL_IM_MODULE': 'fcitx', 'KDE_SESSION_VERSION': '5', 'LC_MONETARY': 'en_US.UTF-8', 'KONSOLE_DBUS_SESSION': '/Sessions/1', 'MANAGERPID': '1714', 'SYSTEMD_EXEC_PID': '1996', 'SSH_ASKPASS': '/usr/bin/ksshaskpass', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'KONSOLE_DBUS_WINDOW': '/Windows/1', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install:/home/aansari/ros2_prac/install', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'aansari', 'WINDOWID': '85983245', 'QT_AUTO_SCREEN_SCALE_FACTOR': '0', 'JOURNAL_STREAM': '8:16702', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'COLORFGBG': '15;0', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'GTK2_RC_FILES': '/etc/gtk-2.0/gtkrc:/home/aansari/.gtkrc-2.0:/home/aansari/.config/gtkrc-2.0', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-ansari:@/tmp/.ICE-unix/1960,unix/ahmed-ansari:/tmp/.ICE-unix/1960', 'INVOCATION_ID': '0b00d6cedd63448198a31a1647aa1ef6', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XCURSOR_THEME': 'breeze_cursors', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'KDE', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'KDE', 'XAUTHORITY': '/tmp/xauth_fbmsNC', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-QWgBT9oZCw9C/agent.1754', 'ROS_DOMAIN_ID': '125', 'AMENT_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'KONSOLE_DBUS_SERVICE': ':1.205', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '2', 'PWD': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob', 'XDG_CONFIG_DIRS': '/home/aansari/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/plasma:/home/aansari/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'KDE_SESSION_UID': '1000', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[31.424936] (-) TimerEvent: {}
+[31.525270] (-) TimerEvent: {}
+[31.542036] (xarmrob) StderrLine: {'line': b"/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[31.542407] (xarmrob) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[31.625349] (-) TimerEvent: {}
+[31.725673] (-) TimerEvent: {}
+[31.737011] (xarmrob) StdoutLine: {'line': b'running develop\n'}
+[31.825787] (-) TimerEvent: {}
+[31.926097] (-) TimerEvent: {}
+[32.026388] (-) TimerEvent: {}
+[32.029958] (xarmrob) StdoutLine: {'line': b'Removing /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob.egg-link (link to .)\n'}
+[32.081778] (xarmrob) CommandEnded: {'returncode': 0}
+[32.083677] (xarmrob) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/xarmrob', 'build', '--build-base', '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build', 'install', '--record', '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/home/aansari/Documents/ME439/ME439Team125/src/xarmrob', 'env': {'PROFILEHOME': '', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'KDE_FULL_SESSION': 'true', 'LANGUAGE': '', 'USER': 'aansari', 'PAM_KWALLET5_LOGIN': '/run/user/1000/kwallet5.socket', 'LC_TIME': 'en_US.UTF-8', 'QT_SCREEN_SCALE_FACTORS': 'eDP-1=1.25;HDMI-1=1.25;', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1842', 'XDG_SESSION_TYPE': 'x11', 'XCURSOR_SIZE': '24', 'KONSOLE_VERSION': '230805', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib:/home/aansari/ros2_prac/install/mobrob_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aansari', 'KDE_APPLICATIONS_AS_SCOPE': '1', 'OLDPWD': '/home/aansari', 'DESKTOP_SESSION': 'plasma', 'ROS_PYTHON_VERSION': '3', 'SHELL_SESSION_ID': '3afa1d799b43407295a193356ee88bde', 'GTK_RC_FILES': '/etc/gtk/gtkrc:/home/aansari/.gtkrc:/home/aansari/.config/gtkrc', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'SDL_IM_MODULE': 'fcitx', 'KDE_SESSION_VERSION': '5', 'LC_MONETARY': 'en_US.UTF-8', 'KONSOLE_DBUS_SESSION': '/Sessions/1', 'MANAGERPID': '1714', 'SYSTEMD_EXEC_PID': '1996', 'SSH_ASKPASS': '/usr/bin/ksshaskpass', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'KONSOLE_DBUS_WINDOW': '/Windows/1', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install:/home/aansari/ros2_prac/install', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'aansari', 'WINDOWID': '85983245', 'QT_AUTO_SCREEN_SCALE_FACTOR': '0', 'JOURNAL_STREAM': '8:16702', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'COLORFGBG': '15;0', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'GTK2_RC_FILES': '/etc/gtk-2.0/gtkrc:/home/aansari/.gtkrc-2.0:/home/aansari/.config/gtkrc-2.0', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-ansari:@/tmp/.ICE-unix/1960,unix/ahmed-ansari:/tmp/.ICE-unix/1960', 'INVOCATION_ID': '0b00d6cedd63448198a31a1647aa1ef6', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XCURSOR_THEME': 'breeze_cursors', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'KDE', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'KDE', 'XAUTHORITY': '/tmp/xauth_fbmsNC', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-QWgBT9oZCw9C/agent.1754', 'ROS_DOMAIN_ID': '125', 'AMENT_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125:/home/aansari/ros2_prac/install/xarmrob:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'KONSOLE_DBUS_SERVICE': ':1.205', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '2', 'PWD': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob', 'XDG_CONFIG_DIRS': '/home/aansari/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/plasma:/home/aansari/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'KDE_SESSION_UID': '1000', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces:/home/aansari/ros2_prac/install/xarmrob_interfaces:/home/aansari/ros2_prac/install/mobrob_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[32.126507] (-) TimerEvent: {}
+[32.226804] (-) TimerEvent: {}
+[32.292278] (xarmrob) StderrLine: {'line': b"/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[32.292567] (xarmrob) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[32.326908] (-) TimerEvent: {}
+[32.427189] (-) TimerEvent: {}
+[32.466931] (xarmrob) StdoutLine: {'line': b'running egg_info\n'}
+[32.494915] (xarmrob) StdoutLine: {'line': b'writing ../../build/xarmrob/xarmrob.egg-info/PKG-INFO\n'}
+[32.495451] (xarmrob) StdoutLine: {'line': b'writing dependency_links to ../../build/xarmrob/xarmrob.egg-info/dependency_links.txt\n'}
+[32.495809] (xarmrob) StdoutLine: {'line': b'writing entry points to ../../build/xarmrob/xarmrob.egg-info/entry_points.txt\n'}
+[32.496093] (xarmrob) StdoutLine: {'line': b'writing requirements to ../../build/xarmrob/xarmrob.egg-info/requires.txt\n'}
+[32.496346] (xarmrob) StdoutLine: {'line': b'writing top-level names to ../../build/xarmrob/xarmrob.egg-info/top_level.txt\n'}
+[32.527306] (-) TimerEvent: {}
+[32.556756] (xarmrob) StdoutLine: {'line': b"reading manifest file '../../build/xarmrob/xarmrob.egg-info/SOURCES.txt'\n"}
+[32.557848] (xarmrob) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[32.559170] (xarmrob) StdoutLine: {'line': b"writing manifest file '../../build/xarmrob/xarmrob.egg-info/SOURCES.txt'\n"}
+[32.559453] (xarmrob) StdoutLine: {'line': b'running build\n'}
+[32.559687] (xarmrob) StdoutLine: {'line': b'running build_py\n'}
+[32.559993] (xarmrob) StdoutLine: {'line': b'creating /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.560366] (xarmrob) StdoutLine: {'line': b'copying xarmrob/endpoint_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.560681] (xarmrob) StdoutLine: {'line': b'copying xarmrob/operate_gripper.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.560984] (xarmrob) StdoutLine: {'line': b'copying xarmrob/move_to_point.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.561305] (xarmrob) StdoutLine: {'line': b'copying xarmrob/command_xarm.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.561642] (xarmrob) StdoutLine: {'line': b'copying xarmrob/__init__.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.561935] (xarmrob) StdoutLine: {'line': b'copying xarmrob/endpoint_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.562258] (xarmrob) StdoutLine: {'line': b'copying xarmrob/cmd_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.562589] (xarmrob) StdoutLine: {'line': b'copying xarmrob/angle_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.562906] (xarmrob) StdoutLine: {'line': b'copying xarmrob/xarm_kinematics.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.563259] (xarmrob) StdoutLine: {'line': b'copying xarmrob/endpoint_keyboard_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.563593] (xarmrob) StdoutLine: {'line': b'copying xarmrob/main_control_node.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.563924] (xarmrob) StdoutLine: {'line': b'copying xarmrob/smooth_interpolation.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.564269] (xarmrob) StdoutLine: {'line': b'copying xarmrob/cmd_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.564604] (xarmrob) StdoutLine: {'line': b'copying xarmrob/parse_svg_for_robot_arm_v03.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.564934] (xarmrob) StdoutLine: {'line': b'copying xarmrob/endpoint_automatic_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.565275] (xarmrob) StdoutLine: {'line': b'copying xarmrob/angle_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob\n'}
+[32.565971] (xarmrob) StdoutLine: {'line': b'running install\n'}
+[32.573722] (xarmrob) StdoutLine: {'line': b'running install_lib\n'}
+[32.602076] (xarmrob) StdoutLine: {'line': b'creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.602381] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.602650] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/operate_gripper.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.602903] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/move_to_point.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.603135] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/command_xarm.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.603398] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/__init__.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.603639] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.603891] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/cmd_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.604150] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/angle_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.604465] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/xarm_kinematics.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.604750] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_keyboard_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.605011] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/main_control_node.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.605282] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/smooth_interpolation.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.605556] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/cmd_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.605810] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/parse_svg_for_robot_arm_v03.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.606038] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_automatic_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.606294] (xarmrob) StdoutLine: {'line': b'copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/angle_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob\n'}
+[32.607055] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_keyboard.py to endpoint_keyboard.cpython-312.pyc\n'}
+[32.608882] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/operate_gripper.py to operate_gripper.cpython-312.pyc\n'}
+[32.609835] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/move_to_point.py to move_to_point.cpython-312.pyc\n'}
+[32.610625] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/command_xarm.py to command_xarm.cpython-312.pyc\n'}
+[32.614302] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/__init__.py to __init__.cpython-312.pyc\n'}
+[32.614692] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_sliders.py to endpoint_sliders.cpython-312.pyc\n'}
+[32.616111] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/cmd_sliders.py to cmd_sliders.cpython-312.pyc\n'}
+[32.618438] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/angle_sliders.py to angle_sliders.cpython-312.pyc\n'}
+[32.620771] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/xarm_kinematics.py to xarm_kinematics.cpython-312.pyc\n'}
+[32.624600] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_keyboard_smooth.py to endpoint_keyboard_smooth.cpython-312.pyc\n'}
+[32.625906] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/main_control_node.py to main_control_node.cpython-312.pyc\n'}
+[32.626882] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/smooth_interpolation.py to smooth_interpolation.cpython-312.pyc\n'}
+[32.627384] (-) TimerEvent: {}
+[32.628027] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/cmd_keyboard.py to cmd_keyboard.cpython-312.pyc\n'}
+[32.629251] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/parse_svg_for_robot_arm_v03.py to parse_svg_for_robot_arm_v03.cpython-312.pyc\n'}
+[32.631274] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_automatic_smooth.py to endpoint_automatic_smooth.cpython-312.pyc\n'}
+[32.632529] (xarmrob) StdoutLine: {'line': b'byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/angle_keyboard.py to angle_keyboard.cpython-312.pyc\n'}
+[32.633957] (xarmrob) StdoutLine: {'line': b'running install_data\n'}
+[32.634359] (xarmrob) StdoutLine: {'line': b'copying resource/xarmrob -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/ament_index/resource_index/packages\n'}
+[32.634873] (xarmrob) StdoutLine: {'line': b'copying package.xml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob\n'}
+[32.635277] (xarmrob) StdoutLine: {'line': b'copying launch/xarm_cmd_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch\n'}
+[32.635598] (xarmrob) StdoutLine: {'line': b'copying launch/xarm_cmd_sliders_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch\n'}
+[32.635918] (xarmrob) StdoutLine: {'line': b'copying launch/xarm_no_cmd_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch\n'}
+[32.636252] (xarmrob) StdoutLine: {'line': b'copying launch/xarm_no_cmd.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch\n'}
+[32.636558] (xarmrob) StdoutLine: {'line': b'copying launch/xarm_automatic.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch\n'}
+[32.636875] (xarmrob) StdoutLine: {'line': b'copying launch/xarm_angle_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch\n'}
+[32.637196] (xarmrob) StdoutLine: {'line': b'copying launch/xarm_endpoint_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch\n'}
+[32.637648] (xarmrob) StdoutLine: {'line': b'copying urdf/urdf.rviz -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf\n'}
+[32.638113] (xarmrob) StdoutLine: {'line': b'copying urdf/robot-xarm-pen.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf\n'}
+[32.638502] (xarmrob) StdoutLine: {'line': b'copying urdf/robot-xarm.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf\n'}
+[32.639170] (xarmrob) StdoutLine: {'line': b'copying config/robot_xarm_info.yaml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/config\n'}
+[32.639715] (xarmrob) StdoutLine: {'line': b'running install_egg_info\n'}
+[32.671211] (xarmrob) StdoutLine: {'line': b'Copying ../../build/xarmrob/xarmrob.egg-info to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob-0.0.0-py3.12.egg-info\n'}
+[32.672540] (xarmrob) StdoutLine: {'line': b'running install_scripts\n'}
+[32.727493] (-) TimerEvent: {}
+[32.827791] (-) TimerEvent: {}
+[32.840675] (xarmrob) StdoutLine: {'line': b'Installing angle_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.841022] (xarmrob) StdoutLine: {'line': b'Installing angle_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.841287] (xarmrob) StdoutLine: {'line': b'Installing cmd_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.841545] (xarmrob) StdoutLine: {'line': b'Installing cmd_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.841804] (xarmrob) StdoutLine: {'line': b'Installing command_xarm script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.842055] (xarmrob) StdoutLine: {'line': b'Installing endpoint_automatic_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.842307] (xarmrob) StdoutLine: {'line': b'Installing endpoint_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.842566] (xarmrob) StdoutLine: {'line': b'Installing endpoint_keyboard_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.842860] (xarmrob) StdoutLine: {'line': b'Installing endpoint_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.843176] (xarmrob) StdoutLine: {'line': b'Installing xarm_kinematics script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob\n'}
+[32.843829] (xarmrob) StdoutLine: {'line': b"writing list of installed files to '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/install.log'\n"}
+[32.884366] (xarmrob) CommandEnded: {'returncode': 0}
+[32.891930] (xarmrob) JobEnded: {'identifier': 'xarmrob', 'rc': 0}
+[32.892947] (-) EventReactorShutdown: {}

@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from xarmrob_interfaces/action/OperateGripper.action
+// generated code does not contain a copyright notice
+
+
+module xarmrob_interfaces {
+  module action {
+    struct OperateGripper_Goal {
+      string order;
+    };
+    struct OperateGripper_Result {
+      string result;
+    };
+    struct OperateGripper_Feedback {
+      string feedback;
+    };
+  };
+};

@@ -1,0 +1,101 @@
+[1.039s] Invoking command in '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build
+[1.248s] /usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.248s]   warnings.warn(msg)
+[1.443s] running develop
+[1.736s] Removing /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob.egg-link (link to .)
+[1.788s] Invoked command in '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build
+[1.790s] Invoking command in '/home/aansari/Documents/ME439/ME439Team125/src/xarmrob': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xarmrob build --build-base /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build install --record /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/install.log --single-version-externally-managed install_data --force
+[1.998s] /usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.998s]   warnings.warn(msg)
+[2.173s] running egg_info
+[2.201s] writing ../../build/xarmrob/xarmrob.egg-info/PKG-INFO
+[2.201s] writing dependency_links to ../../build/xarmrob/xarmrob.egg-info/dependency_links.txt
+[2.201s] writing entry points to ../../build/xarmrob/xarmrob.egg-info/entry_points.txt
+[2.202s] writing requirements to ../../build/xarmrob/xarmrob.egg-info/requires.txt
+[2.202s] writing top-level names to ../../build/xarmrob/xarmrob.egg-info/top_level.txt
+[2.262s] reading manifest file '../../build/xarmrob/xarmrob.egg-info/SOURCES.txt'
+[2.264s] adding license file 'LICENSE'
+[2.265s] writing manifest file '../../build/xarmrob/xarmrob.egg-info/SOURCES.txt'
+[2.265s] running build
+[2.265s] running build_py
+[2.266s] creating /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.266s] copying xarmrob/endpoint_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.266s] copying xarmrob/operate_gripper.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.267s] copying xarmrob/move_to_point.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.267s] copying xarmrob/command_xarm.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.267s] copying xarmrob/__init__.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.268s] copying xarmrob/endpoint_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.268s] copying xarmrob/cmd_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.268s] copying xarmrob/angle_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.269s] copying xarmrob/xarm_kinematics.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.269s] copying xarmrob/endpoint_keyboard_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.269s] copying xarmrob/main_control_node.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.270s] copying xarmrob/smooth_interpolation.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.270s] copying xarmrob/cmd_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.270s] copying xarmrob/parse_svg_for_robot_arm_v03.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.271s] copying xarmrob/endpoint_automatic_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.271s] copying xarmrob/angle_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+[2.272s] running install
+[2.279s] running install_lib
+[2.308s] creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.308s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.308s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/operate_gripper.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.309s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/move_to_point.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.309s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/command_xarm.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.309s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/__init__.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.309s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.310s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/cmd_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.310s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/angle_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.310s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/xarm_kinematics.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.310s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_keyboard_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.311s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/main_control_node.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.311s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/smooth_interpolation.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.311s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/cmd_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.311s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/parse_svg_for_robot_arm_v03.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.312s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_automatic_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.312s] copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/angle_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+[2.313s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_keyboard.py to endpoint_keyboard.cpython-312.pyc
+[2.315s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/operate_gripper.py to operate_gripper.cpython-312.pyc
+[2.316s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/move_to_point.py to move_to_point.cpython-312.pyc
+[2.316s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/command_xarm.py to command_xarm.cpython-312.pyc
+[2.320s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/__init__.py to __init__.cpython-312.pyc
+[2.320s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_sliders.py to endpoint_sliders.cpython-312.pyc
+[2.322s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/cmd_sliders.py to cmd_sliders.cpython-312.pyc
+[2.324s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/angle_sliders.py to angle_sliders.cpython-312.pyc
+[2.326s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/xarm_kinematics.py to xarm_kinematics.cpython-312.pyc
+[2.330s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_keyboard_smooth.py to endpoint_keyboard_smooth.cpython-312.pyc
+[2.332s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/main_control_node.py to main_control_node.cpython-312.pyc
+[2.333s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/smooth_interpolation.py to smooth_interpolation.cpython-312.pyc
+[2.334s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/cmd_keyboard.py to cmd_keyboard.cpython-312.pyc
+[2.335s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/parse_svg_for_robot_arm_v03.py to parse_svg_for_robot_arm_v03.cpython-312.pyc
+[2.337s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_automatic_smooth.py to endpoint_automatic_smooth.cpython-312.pyc
+[2.338s] byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/angle_keyboard.py to angle_keyboard.cpython-312.pyc
+[2.340s] running install_data
+[2.340s] copying resource/xarmrob -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/ament_index/resource_index/packages
+[2.341s] copying package.xml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob
+[2.341s] copying launch/xarm_cmd_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+[2.341s] copying launch/xarm_cmd_sliders_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+[2.342s] copying launch/xarm_no_cmd_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+[2.342s] copying launch/xarm_no_cmd.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+[2.342s] copying launch/xarm_automatic.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+[2.343s] copying launch/xarm_angle_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+[2.343s] copying launch/xarm_endpoint_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+[2.343s] copying urdf/urdf.rviz -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+[2.344s] copying urdf/robot-xarm-pen.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+[2.344s] copying urdf/robot-xarm.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+[2.345s] copying config/robot_xarm_info.yaml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/config
+[2.345s] running install_egg_info
+[2.377s] Copying ../../build/xarmrob/xarmrob.egg-info to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob-0.0.0-py3.12.egg-info
+[2.378s] running install_scripts
+[2.546s] Installing angle_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.547s] Installing angle_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.547s] Installing cmd_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.547s] Installing cmd_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.547s] Installing command_xarm script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.548s] Installing endpoint_automatic_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.548s] Installing endpoint_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.548s] Installing endpoint_keyboard_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.549s] Installing endpoint_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.549s] Installing xarm_kinematics script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+[2.550s] writing list of installed files to '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/install.log'
+[2.590s] Invoked command in '/home/aansari/Documents/ME439/ME439Team125/src/xarmrob' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/xarmrob:/home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125_interfaces/lib/python3.12/site-packages:/home/aansari/Documents/ME439/ME439Team125/build/finalproj125:/home/aansari/Documents/ME439/ME439Team125/install/finalproj125/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/xarmrob:/home/aansari/ros2_prac/install/xarmrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/xarmrob_interfaces/lib/python3.12/site-packages:/home/aansari/ros2_prac/build/mobrob:/home/aansari/ros2_prac/install/mobrob/lib/python3.12/site-packages:/home/aansari/ros2_prac/install/mobrob_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/xarmrob build --build-base /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build install --record /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/install.log --single-version-externally-managed install_data --force

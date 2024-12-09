@@ -1,0 +1,93 @@
+running develop
+Removing /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob.egg-link (link to .)
+running egg_info
+writing ../../build/xarmrob/xarmrob.egg-info/PKG-INFO
+writing dependency_links to ../../build/xarmrob/xarmrob.egg-info/dependency_links.txt
+writing entry points to ../../build/xarmrob/xarmrob.egg-info/entry_points.txt
+writing requirements to ../../build/xarmrob/xarmrob.egg-info/requires.txt
+writing top-level names to ../../build/xarmrob/xarmrob.egg-info/top_level.txt
+reading manifest file '../../build/xarmrob/xarmrob.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/xarmrob/xarmrob.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/endpoint_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/operate_gripper.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/move_to_point.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/command_xarm.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/__init__.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/endpoint_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/cmd_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/angle_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/xarm_kinematics.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/endpoint_keyboard_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/main_control_node.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/smooth_interpolation.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/cmd_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/parse_svg_for_robot_arm_v03.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/endpoint_automatic_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+copying xarmrob/angle_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob
+running install
+running install_lib
+creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/operate_gripper.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/move_to_point.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/command_xarm.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/__init__.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/cmd_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/angle_sliders.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/xarm_kinematics.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_keyboard_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/main_control_node.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/smooth_interpolation.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/cmd_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/parse_svg_for_robot_arm_v03.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/endpoint_automatic_smooth.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+copying /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/build/lib/xarmrob/angle_keyboard.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_keyboard.py to endpoint_keyboard.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/operate_gripper.py to operate_gripper.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/move_to_point.py to move_to_point.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/command_xarm.py to command_xarm.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_sliders.py to endpoint_sliders.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/cmd_sliders.py to cmd_sliders.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/angle_sliders.py to angle_sliders.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/xarm_kinematics.py to xarm_kinematics.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_keyboard_smooth.py to endpoint_keyboard_smooth.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/main_control_node.py to main_control_node.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/smooth_interpolation.py to smooth_interpolation.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/cmd_keyboard.py to cmd_keyboard.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/parse_svg_for_robot_arm_v03.py to parse_svg_for_robot_arm_v03.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/endpoint_automatic_smooth.py to endpoint_automatic_smooth.cpython-312.pyc
+byte-compiling /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob/angle_keyboard.py to angle_keyboard.cpython-312.pyc
+running install_data
+copying resource/xarmrob -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/ament_index/resource_index/packages
+copying package.xml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob
+copying launch/xarm_cmd_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+copying launch/xarm_cmd_sliders_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+copying launch/xarm_no_cmd_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+copying launch/xarm_no_cmd.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+copying launch/xarm_automatic.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+copying launch/xarm_angle_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+copying launch/xarm_endpoint_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+copying urdf/urdf.rviz -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+copying urdf/robot-xarm-pen.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+copying urdf/robot-xarm.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+copying config/robot_xarm_info.yaml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/config
+running install_egg_info
+Copying ../../build/xarmrob/xarmrob.egg-info to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob-0.0.0-py3.12.egg-info
+running install_scripts
+Installing angle_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing angle_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing cmd_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing cmd_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing command_xarm script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_automatic_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_keyboard_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing xarm_kinematics script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+writing list of installed files to '/home/aansari/Documents/ME439/ME439Team125/build/xarmrob/install.log'

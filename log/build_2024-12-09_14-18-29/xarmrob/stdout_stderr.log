@@ -1,0 +1,45 @@
+/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+running egg_info
+creating xarmrob.egg-info
+writing xarmrob.egg-info/PKG-INFO
+writing dependency_links to xarmrob.egg-info/dependency_links.txt
+writing entry points to xarmrob.egg-info/entry_points.txt
+writing requirements to xarmrob.egg-info/requires.txt
+writing top-level names to xarmrob.egg-info/top_level.txt
+writing manifest file 'xarmrob.egg-info/SOURCES.txt'
+reading manifest file 'xarmrob.egg-info/SOURCES.txt'
+writing manifest file 'xarmrob.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/python3.12/site-packages/xarmrob.egg-link (link to .)
+Installing angle_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing angle_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing cmd_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing cmd_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing command_xarm script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_automatic_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_keyboard script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_keyboard_smooth script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing endpoint_sliders script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+Installing xarm_kinematics script to /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/lib/xarmrob
+
+Installed /home/aansari/Documents/ME439/ME439Team125/build/xarmrob
+running symlink_data
+creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/ament_index/resource_index/packages
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/resource/xarmrob -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/ament_index/resource_index/packages
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/package.xml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob
+creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/launch/xarm_cmd_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/launch/xarm_cmd_sliders_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/launch/xarm_no_cmd_param.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/launch/xarm_no_cmd.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/launch/xarm_automatic.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/launch/xarm_angle_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/launch/xarm_endpoint_sliders.launch.py -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/launch
+creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/urdf/urdf.rviz -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/urdf/robot-xarm-pen.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/urdf/robot-xarm.urdf -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/urdf
+creating /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/config
+symbolically linking /home/aansari/Documents/ME439/ME439Team125/build/xarmrob/config/robot_xarm_info.yaml -> /home/aansari/Documents/ME439/ME439Team125/install/xarmrob/share/xarmrob/config
