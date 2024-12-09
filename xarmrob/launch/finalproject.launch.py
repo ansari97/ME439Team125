@@ -45,7 +45,7 @@ def generate_launch_description():
             name='endpoint_keyboard_smooth',
             output='screen',  # Enable input and output to screen
             parameters=[params_file],
-            prefix='x-terminal-emulator -e bash -c "ros2 run xarmrob endpoint_keyboard_smooth; read"'  # Open in a new terminal and keep it open
+            prefix='x-terminal-emulator -e "ros2 run xarmrob endpoint_keyboard_smooth; read"'  # Open in a new terminal and keep it open
         ),
         Node(
             package='robot_state_publisher',
