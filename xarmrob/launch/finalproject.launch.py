@@ -37,13 +37,13 @@ def generate_launch_description():
             name='xarm_kinematics',
             parameters=[params_file]
         ),
-        Node(
-            package='xarmrob',
-            executable='endpoint_keyboard_smooth',
-            name='endpoint_keyboard_smooth',
-            output = 'screen',
-            parameters=[params_file]
-        ),
+        # Node(
+        #     package='xarmrob',
+        #     executable='endpoint_keyboard_smooth',
+        #     name='endpoint_keyboard_smooth',
+        #     output = 'screen',
+        #     parameters=[params_file]
+        # ),
         
         # This adds "robot_state_publisher" to publish Transforms through the "tf2" mechanism. It is a stock ROS package, and it uses the URDF file and "joint_states" topic to work. 
         Node(
