@@ -41,6 +41,7 @@ def generate_launch_description():
             package='xarmrob',
             executable='endpoint_keyboard_smooth',
             name='endpoint_keyboard_smooth',
+            output = 'screen',
             parameters=[params_file]
         ),
         
