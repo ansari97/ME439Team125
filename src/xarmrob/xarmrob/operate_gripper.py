@@ -9,7 +9,7 @@ import numpy as np
 # import messages and actions: 
 from std_msgs.msg import String
 from xarmrob_interfaces.action import OperateGripper
-from xarmrob_interfaces.msg import ME439JointCommand, ME439GripperCommand
+from xarmrob_interfaces.msg import ME439GripperCommand
 
 # define node
 class OperateGripperServer(Node):

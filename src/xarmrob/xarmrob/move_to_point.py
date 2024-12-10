@@ -17,7 +17,7 @@ class MoveToPointActionServer(Node):
         super().__init__("move_to_point_server")
 
         # action server for moving the robot to a point
-        self.action_server = ActionServer(self, ME439MoveToTarget, "move_to_target???", self.callback)
+        self.action_server = ActionServer(self, ME439MoveToTarget, "/move_to_target", self.callback)
  
     def callback(self, goal_handle):
         goal_request = goal_handle.request.xyz
@@ -26,6 +26,8 @@ class MoveToPointActionServer(Node):
         # verify good point coordinates
 
         # do inverse kinematics and move arm to point using topics and other hardware nodes
+
+        
 
         # what will be the result
 
