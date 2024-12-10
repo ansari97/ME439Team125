@@ -261,7 +261,11 @@ class XArmKinematics(Node):
     
         # Gripper Assumption option 1; assume the Wrist is controlled so the Gripper is at a 45 degree angle downward in the RTZ world frame. 
         # gripper_angle = np.pi/4
-        gripper_angle = np.pi/2
+        # Rgrip = np.array([ [np.cos(gripper_angle), 0, np.sin(gripper_angle)], [0,1,0], [-np.sin(gripper_angle), 0, np.cos(gripper_angle)]])
+        # gripper_offset_RTZ = Rgrip.dot(self.r_6end)
+        
+        # Gripper Assumption option 2; assume the Wrist is controlled so the Gripper is at a 0 degree angle downward in the RTZ world frame.       
+        gripper_angle = 0
         Rgrip = np.array([ [np.cos(gripper_angle), 0, np.sin(gripper_angle)], [0,1,0], [-np.sin(gripper_angle), 0, np.cos(gripper_angle)]])
         gripper_offset_RTZ = Rgrip.dot(self.r_6end)
         
