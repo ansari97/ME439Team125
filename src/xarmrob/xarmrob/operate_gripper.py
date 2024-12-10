@@ -18,7 +18,7 @@ class OperateGripperServer(Node):
         super().__init__("operate_gripper_server")
 
         # action server for operating the gripper
-        self.action_server = ActionServer(self, OperateGripper, "/operate_gripper_action", self.callback)
+        self.action_server = ActionServer(self, OperateGripper, "operate_R5_gripper_action", self.callback)
 
         # publisher for the gripper commands
         self.pub_operate_gripper = self.create_publisher(ME439GripperCommand, '/operate_gripper', 1)
