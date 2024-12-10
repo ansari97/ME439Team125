@@ -9,14 +9,18 @@ import numpy as np
 from scipy import interpolate
 # IMPORT the messages: 
 from sensor_msgs.msg import JointState
-from xarmrob_interfaces.msg import ME439JointCommand
+from xarmrob_interfaces.msg import ME439JointCommand, ME439GripperCommand
 # IMPORT the arm controller
 import xarm
-
 
 class CommandXArm(Node): 
     def __init__(self): 
         super().__init__('command_arm')
+
+        ## added by team 125
+        # Subscriber to move only the gripper servo
+        self.sub_operate_gripper = self.create_subscription(ME439GripperCommand, '/operate_gripper', self.operate_gripper, 1)
+
                     
         # =============================================================================
         #   Subscribe to "/joint_angles_desired" to get joint angle values. 
@@ -267,6 +271,10 @@ class CommandXArm(Node):
             # traceback.print_exc()
             self.get_logger().error('Bad servo read.')
 
+    def operate_gripper(self, msg_in):
+        cmd = msg_in.command
+        servo_index = 6
+        self.command_bus_servo(servo_index, cmd)
 
 
 
