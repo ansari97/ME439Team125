@@ -256,13 +256,14 @@ class XArmKinematics(Node):
         gamma5 = 0
         
         # # Gripper Assumption option 0: assume the wrist is controlled so the gripper points directly down
-        # Rgrip = np.array([ [np.cos(np.pi/2), 0, np.sin(np.pi/2)], [0,1,0], [-np.sin(np.pi/2), 0, np.cos(np.pi/2)]])
-        # gripper_offset_RTZ = Rgrip.dot(self.r_6end)
+        gripper_angle = 0
+        Rgrip = np.array([ [np.cos(np.pi/2), 0, np.sin(np.pi/2)], [0,1,0], [-np.sin(np.pi/2), 0, np.cos(np.pi/2)]])
+        gripper_offset_RTZ = Rgrip.dot(self.r_6end)
     
         # Gripper Assumption option 1; assume the Wrist is controlled so the Gripper is at a 45 degree angle downward in the RTZ world frame. 
-        gripper_angle = np.pi/4
-        Rgrip = np.array([ [np.cos(gripper_angle), 0, np.sin(gripper_angle)], [0,1,0], [-np.sin(gripper_angle), 0, np.cos(gripper_angle)]])
-        gripper_offset_RTZ = Rgrip.dot(self.r_6end)
+        # gripper_angle = np.pi/4
+        # Rgrip = np.array([ [np.cos(gripper_angle), 0, np.sin(gripper_angle)], [0,1,0], [-np.sin(gripper_angle), 0, np.cos(gripper_angle)]])
+        # gripper_offset_RTZ = Rgrip.dot(self.r_6end)
         
         # First the out-of-plane rotation
         alpha0 = np.arctan2(xyz[1], xyz[0])
@@ -327,8 +328,6 @@ class XArmKinematics(Node):
         angles_limited[5] = np.clip(angles_limited[5], np.min(self.rotlim_56), np.max(self.rotlim_56))
     
         return angles_limited
-
-
 
 
 
