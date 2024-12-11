@@ -102,14 +102,19 @@ def main(args=None):
     control_node_instance = ControlNode("main_control_node")
 
     # 2 Initialize both robots: done by the control xarm and the endpoint nodes
-    control_node_instance.get_logger().info("here")
+    control_node_instance.get_logger().info("Starting sequence...")
+
     # 3 Open R5 gripper so it doesn't topple the cargo when going to point
     future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "open")
-    time.sleep(10)
+    time.sleep(5) # waits for gripper to operate; adjust as required
+
     control_node_instance.get_logger().info("opened")
+
+    # Testing
     future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "close")
     time.sleep(1)
-    control_node_instance.get_logger().info("done")
+
+    control_node_instance.get_logger().info("closed")
 
     # # 4 move robot 5 to known pickup_point
     # control_node_instance.send_endpoint_to_robot(5, pickup_point)
