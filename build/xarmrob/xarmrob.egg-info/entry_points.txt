@@ -8,4 +8,7 @@ endpoint_automatic_smooth = xarmrob.endpoint_automatic_smooth:main
 endpoint_keyboard = xarmrob.endpoint_keyboard:main
 endpoint_keyboard_smooth = xarmrob.endpoint_keyboard_smooth:main
 endpoint_sliders = xarmrob.endpoint_sliders:main
+endpoint_smooth = xarmrob.endpoint_smooth:main
+main_control_node = xarmrob.main_control_node:main
+operate_gripper = xarmrob.operate_gripper:main
 xarm_kinematics = xarmrob.xarm_kinematics:main

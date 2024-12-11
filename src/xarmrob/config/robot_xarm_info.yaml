@@ -7,7 +7,7 @@
     # Indices and ID numbers of the Hiwonder Bus Servos, from base to tip
     bus_servo_indices_base_to_tip: [0,1,2,3,4,5,6]  # increasing order from ground to endpoint. The last one is the Gripper. 
     bus_servo_IDs_base_to_tip: [6,5,4,7,3,2,1] # Servo ID is programmed into the servo itself and is usually written on it. Register your ID numbers here. 
-    bus_servo_neutral_cmds_base_to_tip: [500,500,500,500,500,500,90]  # commands for returning to neutral. 
+    bus_servo_neutral_cmds_base_to_tip: [500,600,500,500,500,500,90]  # commands for returning to neutral. 
     joint_neutral_angs_base_to_tip: [0., -1.5707, 1.5707, 0., 0., 0., 0.]   # angles for returning to neutral. 
     
     # Rotational Axis limits (degrees)
@@ -21,19 +21,19 @@
     # Rotational Axis degrees-to-commands mapping
     # (commands range 0 to 1000)
     rotational_angles_for_mapping_joint_01: [-90,0,90]
-    bus_servo_cmd_for_mapping_joint_01: [120, 500, 880]
+    bus_servo_cmd_for_mapping_joint_01: [111, 502, 875]
     rotational_angles_for_mapping_joint_12: [-180,-90,0]
-    bus_servo_cmd_for_mapping_joint_12: [870,500,120]
+    bus_servo_cmd_for_mapping_joint_12: [870,519,142]
     rotational_angles_for_mapping_joint_23: [0,90,180]
-    bus_servo_cmd_for_mapping_joint_23: [140,500,880]
-    rotational_angles_for_mapping_joint_34: [-112,-90,0,90,112]
-    bus_servo_cmd_for_mapping_joint_34: [1000,890,505,140,0]
-    rotational_angles_for_mapping_joint_45: [-112,-90,0,90,112]
-    bus_servo_cmd_for_mapping_joint_45: [0,120,490,880,1000]
-    rotational_angles_for_mapping_joint_56: [-112,-90,0,90,112]
-    bus_servo_cmd_for_mapping_joint_56: [0,120,500,880,1000]
+    bus_servo_cmd_for_mapping_joint_23: [125,494,864]
+    rotational_angles_for_mapping_joint_34: [-90,0,90]
+    bus_servo_cmd_for_mapping_joint_34: [846, 471, 101]
+    rotational_angles_for_mapping_joint_45: [-90,0,90]
+    bus_servo_cmd_for_mapping_joint_45: [119, 482, 868]
+    rotational_angles_for_mapping_joint_56: [-90, 0, 90]
+    bus_servo_cmd_for_mapping_joint_56: [127, 499, 862]
     rotational_angles_for_mapping_gripper: [0, 90]
-    bus_servo_cmd_for_mapping_gripper: [90,610]
+    bus_servo_cmd_for_mapping_gripper: [54,570]
 
 # # Kinematic parameters. Some for Inverse Kinematics only, others for Forward Kinematics also.
 # /**:
@@ -41,7 +41,7 @@
     # Speed for controlled movement
     endpoint_speed: 0.05
     # Height offset (for safety: do dry runs in the air: suggest 0.02 m up)
-    vertical_offset: 0.05
+    vertical_offset: 0.2
     # Sign of positive rotations w.r.t. the +y axis
     y_rotation_sign: 1 # Could otherwise be -1 if using 'positive rotations about the -y axis'
     # Frame offsets to successive links (units: m)

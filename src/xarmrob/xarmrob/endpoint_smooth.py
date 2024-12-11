@@ -39,14 +39,14 @@ class EndpointSmooth(Node):
         self.idx = 0
 
         #Subscriber that receives endpoint command
-        self.sub_endpoint_desired = self.create_subscription(ME439PointXYZ,'R5_endpoint_desired', self.endpoint_requests, 1)
+        self.sub_endpoint_desired = self.create_subscription(ME439PointXYZ,'/R5_endpoint_desired', self.endpoint_requests, 1)
         
 
 
         # =============================================================================
         #   # Publisher for the Endpoint goal. 
         # =============================================================================
-        self.pub_endpoint_desired = self.create_publisher(ME439PointXYZ,'/endpoint_desired',1,callback_group=ReentrantCallbackGroup())
+        self.pub_endpoint_desired = self.create_publisher(ME439PointXYZ,'endpoint_desired',1,callback_group=ReentrantCallbackGroup())
         # Create the message, with a nominal pose
         self.endpoint_desired_msg = ME439PointXYZ()
         self.endpoint_desired_msg.xyz = self.xyz_goal 
@@ -100,12 +100,9 @@ def main(args=None):
     try: 
         rclpy.init(args=args)
         endpoint_smooth_instance = EndpointSmooth()  
-        thrd = threading.Thread(target=endpoint_smooth_instance.endpoint_requests())
-        thrd.start()
-        # No need to "rclpy.spin(endpoint_smooth_instance)" here because there's a while() loop blocking and keeping it alive. 
-        executor=MultiThreadedExecutor()
-        rclpy.spin(endpoint_smooth_instance,executor=executor)
-        # rclpy.spin(endpoint_smooth_instance)
+        
+        rclpy.spin(endpoint_smooth_instance)
+        
         
     except: 
         traceback.print_exc(limit=1)

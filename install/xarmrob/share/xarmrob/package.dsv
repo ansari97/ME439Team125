@@ -4,3 +4,6 @@ source;share/xarmrob/hook/pythonpath.sh
 source;share/xarmrob/hook/ament_prefix_path.ps1
 source;share/xarmrob/hook/ament_prefix_path.dsv
 source;share/xarmrob/hook/ament_prefix_path.sh
+source;../../build/xarmrob/share/xarmrob/hook/pythonpath_develop.ps1
+source;../../build/xarmrob/share/xarmrob/hook/pythonpath_develop.dsv
+source;../../build/xarmrob/share/xarmrob/hook/pythonpath_develop.sh

@@ -1,5 +1,0 @@
-int32 order
----
-int32 action_result
----
-int32 feedback

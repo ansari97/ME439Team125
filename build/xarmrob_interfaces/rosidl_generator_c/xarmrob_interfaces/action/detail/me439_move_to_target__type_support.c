@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "xarmrob_interfaces/action/detail/me439_move_to_target__struct.h"
 #include "xarmrob_interfaces/action/detail/me439_move_to_target__functions.h"
-#include "xarmrob_interfaces/action/detail/me439_move_to_target__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "xarmrob_interfaces/action/detail/me439_move_to_target__type_support.h"
+#include "xarmrob_interfaces/action/detail/me439_move_to_target__struct.h"
 
 #ifdef __cplusplus
 extern "C"

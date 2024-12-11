@@ -1,6 +1,0 @@
-setup.py
-finalproj125_interfaces/__init__.py
-finalproj125_interfaces.egg-info/PKG-INFO
-finalproj125_interfaces.egg-info/SOURCES.txt
-finalproj125_interfaces.egg-info/dependency_links.txt
-finalproj125_interfaces.egg-info/top_level.txt

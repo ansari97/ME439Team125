@@ -20,7 +20,7 @@ class CommandXArm(Node):
 
         ## added by team 125
         # Subscriber to move only the gripper servo
-        self.sub_operate_gripper = self.create_subscription(ME439GripperCommand, '/operate_gripper', self.operate_gripper, 1)
+        self.sub_operate_gripper = self.create_subscription(ME439GripperCommand, 'operate_gripper', self.operate_gripper, 1)
 
                     
         # =============================================================================
@@ -41,7 +41,7 @@ class CommandXArm(Node):
         # =============================================================================
         #   # Publisher for the digital servo motor commands. 
         # =============================================================================
-        self.pub_bus_servo_commands = self.create_publisher(ME439JointCommand,'/bus_servo_commands',1)
+        # self.pub_bus_servo_commands = self.create_publisher(ME439JointCommand,'/bus_servo_commands',1)
         self.bus_servo_commands_msg = ME439JointCommand()
 
         # =============================================================================
@@ -139,7 +139,7 @@ class CommandXArm(Node):
             self.bus_servo_commands_msg.enable = True
             self.bus_servo_commands_msg.header.stamp = self.get_clock().now().to_msg()
             # Publish the bus servo commands, and let the handler for that message receive it. 
-            self.pub_bus_servo_commands.publish(self.bus_servo_commands_msg)
+            # self.pub_bus_servo_commands.publish(self.bus_servo_commands_msg)
             # # Alternatively, call the function to move the servos directly, rather than publishing the message. 
             # self.move_servos_and_set_joint_state(self.bus_servo_commands_msg)
         except ValueError: 

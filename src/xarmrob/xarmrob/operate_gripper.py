@@ -21,7 +21,7 @@ class OperateGripperServer(Node):
         self.action_server = ActionServer(self, OperateGripper, "operate_R5_gripper_action", self.callback)
 
         # publisher for the gripper commands
-        self.pub_operate_gripper = self.create_publisher(ME439GripperCommand, '/operate_gripper', 1)
+        self.pub_operate_gripper = self.create_publisher(ME439GripperCommand, 'operate_gripper', 1)
 
         # gripper cmd values
         self.bus_servo_cmd_for_mapping_gripper = self.declare_parameter('bus_servo_cmd_for_mapping_gripper',[54, 570]).value

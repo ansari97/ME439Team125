@@ -5,5 +5,4 @@ Summary: Code for the robot arm package "xarmrob" used in the University of Wisc
 Maintainer: PeterAdamczyk
 Maintainer-email: peter.adamczyk@wisc.edu
 License: Apache-2.0
-License-File: LICENSE
 Requires-Dist: setuptools

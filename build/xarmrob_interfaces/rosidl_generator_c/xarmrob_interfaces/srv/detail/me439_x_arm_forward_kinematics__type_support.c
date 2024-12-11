@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support.h"
-#include "xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__functions.h"
+#include "xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__struct.h"
+#include "xarmrob_interfaces/srv/detail/me439_x_arm_forward_kinematics__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

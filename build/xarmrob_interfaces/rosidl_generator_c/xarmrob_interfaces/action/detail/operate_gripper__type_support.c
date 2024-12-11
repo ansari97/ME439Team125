@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "xarmrob_interfaces/action/detail/operate_gripper__type_support.h"
-#include "xarmrob_interfaces/action/detail/operate_gripper__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "xarmrob_interfaces/action/detail/operate_gripper__struct.h"
+#include "xarmrob_interfaces/action/detail/operate_gripper__type_support.h"
+#include "xarmrob_interfaces/action/detail/operate_gripper__functions.h"
 
 #ifdef __cplusplus
 extern "C"
