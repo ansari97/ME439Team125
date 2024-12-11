@@ -95,7 +95,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     ###
-    pickup_point = [0.145, 0.0, 0.155]; # x, y, z coordinates in base 5 frame
+    pickup_point = [0.0, 0.145, 0.155]; # x, y, z coordinates in base 5 frame
     dropoff_point = []; # x, y, z coordinates in base 5 frame
     out_of_way_point = [] # x, y, z coordinates in base 5 frame
 

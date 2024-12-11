@@ -68,7 +68,8 @@ class EndpointSmooth(Node):
         self.idx += 1
         self.endpoint_desired_msg.xyz = self.xyz_goal 
         # self.get_logger().info(self.endpoint_desired_msg)
-        self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
+        # self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
+        # self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
         self.pub_endpoint_desired.publish(self.endpoint_desired_msg)
 
         
@@ -84,6 +85,10 @@ class EndpointSmooth(Node):
         # prnttmpl = coloredtext(50,255,50,'\n\tEndpoint Goal Input was [' + '{:.3f}, '*2 + '{:.3f}]')
         # self.get_logger().info(prnttmpl.format(*in_floats))
         self.new_xyz_goal = msg_in.xyz
+
+        self.get_logger().info(str(self.new_xyz_goal[0]))
+        self.get_logger().info(str(self.new_xyz_goal[1]))
+        self.get_logger().info(str(self.new_xyz_goal[2]))
      
         # Do linear or minimum jerk interpolation
         self.t,self.disp_traj = smoo.minimum_jerk_interpolation(np.array(self.old_xyz_goal), np.array(self.new_xyz_goal), self.endpoint_speed, self.command_frequency)
