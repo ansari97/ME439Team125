@@ -67,7 +67,7 @@ class EndpointSmooth(Node):
         self.xyz_goal = self.disp_traj[self.idx]
         self.idx += 1
         self.endpoint_desired_msg.xyz = self.xyz_goal 
-        self.get_logger().info(self.endpoint_desired_msg)
+        # self.get_logger().info(self.endpoint_desired_msg)
         self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
         self.pub_endpoint_desired.publish(self.endpoint_desired_msg)
 
@@ -77,6 +77,8 @@ class EndpointSmooth(Node):
         # Run a loop that gets input from the user
 
         self.get_logger().info("R5 Received end point command")
+
+        self.get_logger().info(msg_in.xyz)
         
                 
         # prnttmpl = coloredtext(50,255,50,'\n\tEndpoint Goal Input was [' + '{:.3f}, '*2 + '{:.3f}]')
