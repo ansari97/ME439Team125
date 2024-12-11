@@ -51,7 +51,8 @@ class ControlNode(Node):
         R12_server_available = True
         
         if not (R5_server_available and R12_server_available):
-            pass
+            self.get_logger().info("Gripper servers not available, status: " + str(R5_server_available) + ", " + str(R12_server_available))
+            return
             # do something: return??
 
         if robot == 5:

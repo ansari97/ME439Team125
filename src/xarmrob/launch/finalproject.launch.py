@@ -28,6 +28,14 @@ def generate_launch_description():
         Node(
             namespace = 'R5',
             package='xarmrob',
+            executable='operate_gripper',
+            name='operate_gripper',
+            output='screen',  # Enable input and output to screen
+            parameters=[params_file]
+        ),
+        Node(
+            namespace = 'R5',
+            package='xarmrob',
             executable='command_xarm',
             name='command_xarm',
             output='screen',  # Enable output to screen
@@ -56,15 +64,8 @@ def generate_launch_description():
             name='main_control_node',
             output='screen',  # Enable input and output to screen
             parameters=[params_file]
-        ),
-        Node(
-            namespace = 'R5',
-            package='xarmrob',
-            executable='operate_gripper',
-            name='operate_gripper',
-            output='screen',  # Enable input and output to screen
-            parameters=[params_file]
         )
+        
         # Node(
         #     package='robot_state_publisher',
         #     executable='robot_state_publisher',
