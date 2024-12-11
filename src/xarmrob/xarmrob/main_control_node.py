@@ -23,15 +23,15 @@ class ControlNode(Node):
 
         # action client for operating gripper
         self.operate_R5_gripper_client = ActionClient(
-            self, OperateGripper, "/R5/operate_R5_gripper_action"
+            self, OperateGripper, "/R5/operate_gripper_action"
         )
         self.operate_R12_gripper_client = ActionClient(
-            self, OperateGripper, "operate_R12_gripper_action"
+            self, OperateGripper, "/R12/operate_gripper_action"
         )
 
         # publisher for endpoints desired
         self.pub_R5_endpoint_desired = self.create_publisher(
-            ME439PointXYZ, "/R5_endpoint_desired", 1
+            ME439PointXYZ, "/R5/endpoint_desired", 1
         )
 
         # publisher for endpoints desired
@@ -95,7 +95,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     ###
-    pickup_point = []; # x, y, z coordinates in base 5 frame
+    pickup_point = [0.03, 0.28, 0.1]; # x, y, z coordinates in base 5 frame
     dropoff_point = []; # x, y, z coordinates in base 5 frame
     out_of_way_point = [] # x, y, z coordinates in base 5 frame
 
@@ -116,10 +116,11 @@ def main(args=None):
     time.sleep(1)
 
     control_node_instance.get_logger().info("closed")
+    control_node_instance.get_logger().info("Sending pickup point to R5")
 
-    # # 4 move robot 5 to known pickup_point
-    # control_node_instance.send_endpoint_to_robot(5, pickup_point)
-    # time.sleep(1)
+    # 4 move robot 5 to known pickup_point
+    control_node_instance.send_endpoint_to_robot(5, pickup_point)
+    time.sleep(1)
 
     # # 5 close R5 gripper after it reaches the desired endpoint
     # future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "close")

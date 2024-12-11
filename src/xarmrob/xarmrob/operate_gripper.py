@@ -18,7 +18,7 @@ class OperateGripperServer(Node):
         super().__init__("operate_gripper_server")
 
         # action server for operating the gripper
-        self.action_server = ActionServer(self, OperateGripper, "operate_R5_gripper_action", self.callback)
+        self.action_server = ActionServer(self, OperateGripper, "operate_gripper_action", self.callback)
 
         # publisher for the gripper commands
         self.pub_operate_gripper = self.create_publisher(ME439GripperCommand, 'operate_gripper', 1)
@@ -29,7 +29,7 @@ class OperateGripperServer(Node):
 
     def callback(self, goal_handle):
         goal_request = goal_handle.request.order
-        self.get_logger().info("goal: " + str(goal_request) + "received by robot 12 gripper")   
+        self.get_logger().info("goal: " + str(goal_request) + " received by robot 5 gripper")   
         
         self.bus_servo_command_msg = ME439GripperCommand()
 

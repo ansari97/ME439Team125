@@ -39,7 +39,7 @@ class EndpointSmooth(Node):
         self.idx = 0
 
         #Subscriber that receives endpoint command
-        self.sub_endpoint_desired = self.create_subscription(ME439PointXYZ,'/R5_endpoint_desired', self.endpoint_requests, 1)
+        self.sub_endpoint_desired = self.create_subscription(ME439PointXYZ,'endpoint_desired', self.endpoint_requests, 1)
         
 
 
