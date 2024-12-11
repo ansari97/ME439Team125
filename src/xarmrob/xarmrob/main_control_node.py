@@ -23,7 +23,7 @@ class ControlNode(Node):
 
         # action client for operating gripper
         self.operate_R5_gripper_client = ActionClient(
-            self, OperateGripper, "operate_R5_gripper_action"
+            self, OperateGripper, "/R5/operate_R5_gripper_action"
         )
         self.operate_R12_gripper_client = ActionClient(
             self, OperateGripper, "operate_R12_gripper_action"

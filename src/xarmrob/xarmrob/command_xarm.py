@@ -27,7 +27,7 @@ class CommandXArm(Node):
         #   Subscribe to "/joint_angles_desired" to get joint angle values. 
         # =============================================================================
         ## This will come from joint angle sliders or anything else that specifies Angles rather than direct commands. 
-        self.sub_joint_angles = self.create_subscription(JointState, '/joint_angles_desired', self.compute_commands, 1, callback_group=ReentrantCallbackGroup())
+        self.sub_joint_angles = self.create_subscription(JointState, 'joint_angles_desired', self.compute_commands, 1, callback_group=ReentrantCallbackGroup())
         #   NOTE the Callback to the "self.compute_commands" method, which will compute the commands that should be sent to each specific motor. 
         
         # =============================================================================
