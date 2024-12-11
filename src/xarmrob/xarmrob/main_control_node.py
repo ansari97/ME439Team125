@@ -31,12 +31,12 @@ class ControlNode(Node):
 
         # publisher for endpoints desired
         self.pub_R5_endpoint_desired = self.create_publisher(
-            ME439PointXYZ, "/R5/endpoint_desired", 1
+            ME439PointXYZ, "/R5/endpoint_desired_cmd", 1
         )
 
         # publisher for endpoints desired
         self.pub_R12_endpoint_desired = self.create_publisher(
-            ME439PointXYZ, "/R12_endpoint_desired", 1
+            ME439PointXYZ, "/R12/endpoint_desired_cmd", 1
         )
 
         # state topic for reading sta te of both the robots
