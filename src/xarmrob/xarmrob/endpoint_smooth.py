@@ -33,7 +33,7 @@ class EndpointSmooth(Node):
         
         self.xyz_goal = [0.165, 0.0, 0.155] # roughly upright neutral with wrist at 45 degrees. Formally: [0.1646718829870224, 0.0, 0.1546700894832611]
         self.old_xyz_goal = [0.165, 0.0, 0.155]
-        self.xyz_traj = [self.old_xyz_goalSending]
+        self.xyz_traj = [self.old_xyz_goal]
         self.disp_traj = self.xyz_traj 
         self.gripper = 0
         self.idx = 0

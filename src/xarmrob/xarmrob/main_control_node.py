@@ -113,7 +113,7 @@ def main(args=None):
 
     # Testing
     future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "close")
-    time.sleep(1)
+    time.sleep(5)
 
     control_node_instance.get_logger().info("closed")
     control_node_instance.get_logger().info("Sending pickup point to R5")
