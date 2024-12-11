@@ -33,7 +33,7 @@ class EndpointSmooth(Node):
         
         self.xyz_goal = [0.165, 0.0, 0.155] # roughly upright neutral with wrist at 45 degrees. Formally: [0.1646718829870224, 0.0, 0.1546700894832611]
         self.old_xyz_goal = [0.165, 0.0, 0.155]
-        self.xyz_traj = [self.old_xyz_goal]
+        self.xyz_traj = [self.old_xyz_goalSending]
         self.disp_traj = self.xyz_traj 
         self.gripper = 0
         self.idx = 0
@@ -78,7 +78,7 @@ class EndpointSmooth(Node):
 
         self.get_logger().info("R5 Received end point command")
 
-        self.get_logger().info(msg_in.xyz)
+        # self.get_logger().info(msg_in.xyz)
         
                 
         # prnttmpl = coloredtext(50,255,50,'\n\tEndpoint Goal Input was [' + '{:.3f}, '*2 + '{:.3f}]')

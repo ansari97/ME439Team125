@@ -122,6 +122,11 @@ def main(args=None):
     control_node_instance.send_endpoint_to_robot(5, pickup_point)
     time.sleep(1)
 
+    control_node_instance.get_logger().info("Finished sequence")
+ 
+    while(True):
+        pass
+
     # # 5 close R5 gripper after it reaches the desired endpoint
     # future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "close")
     # time.sleep(1)
