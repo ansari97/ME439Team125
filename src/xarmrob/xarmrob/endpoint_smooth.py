@@ -46,7 +46,7 @@ class EndpointSmooth(Node):
         # =============================================================================
         #   # Publisher for the Endpoint goal. 
         # =============================================================================
-        self.pub_endpoint_desired = self.create_publisher(ME439PointXYZ,'endpoint_desired',1,callback_group=ReentrantCallbackGroup())
+        self.pub_endpoint_desired = self.create_publisher(ME439PointXYZ,'endpoint_desired',1)
         # Create the message, with a nominal pose
         self.endpoint_desired_msg = ME439PointXYZ()
         self.endpoint_desired_msg.xyz = self.xyz_goal 
@@ -67,6 +67,8 @@ class EndpointSmooth(Node):
         self.xyz_goal = self.disp_traj[self.idx]
         self.idx += 1
         self.endpoint_desired_msg.xyz = self.xyz_goal 
+        self.get_logger().info(self.endpoint_desired_msg)
+        self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
         self.pub_endpoint_desired.publish(self.endpoint_desired_msg)
 
         
@@ -80,7 +82,7 @@ class EndpointSmooth(Node):
         # prnttmpl = coloredtext(50,255,50,'\n\tEndpoint Goal Input was [' + '{:.3f}, '*2 + '{:.3f}]')
         # self.get_logger().info(prnttmpl.format(*in_floats))
         self.new_xyz_goal = msg_in.xyz
-        
+     
         # Do linear or minimum jerk interpolation
         self.t,self.disp_traj = smoo.minimum_jerk_interpolation(np.array(self.old_xyz_goal), np.array(self.new_xyz_goal), self.endpoint_speed, self.command_frequency)
         
