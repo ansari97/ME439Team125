@@ -162,7 +162,8 @@ class CommandXArm(Node):
                     
         # send the servo commands if (and only if) there's an arm attached. 
         if self.arm_is_present:
-            self.command_bus_servos( self.bus_servo_indices_base_to_tip[1:-1], self.cmd_all)
+            # do not change the gripper and the wrist
+            self.command_bus_servos( self.bus_servo_indices_base_to_tip[1:-2], self.cmd_all)
 
         # # Pack the Joint State and publish it. 
         # try:
