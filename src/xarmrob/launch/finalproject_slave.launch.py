@@ -16,7 +16,7 @@ def generate_launch_description():
         robot_desc = infp.read()
         
     # Find the YAML file of parameters
-    params_file_name = 'robot_xarm_info.yaml'
+    params_file_name = 'robot_xarm_info_R5.yaml'
     params_file = os.path.join(
         get_package_share_directory('xarmrob'),
         'config',
@@ -26,7 +26,7 @@ def generate_launch_description():
     # Create the Launch Description
     launch_descr = LaunchDescription([
         Node(
-            namespace = 'R12',
+            namespace = 'R5',
             package='xarmrob',
             executable='operate_gripper',
             name='operate_gripper',
@@ -34,7 +34,7 @@ def generate_launch_description():
             parameters=[params_file]
         ),
         Node(
-            namespace = 'R12',
+            namespace = 'R5',
             package='xarmrob',
             executable='command_xarm',
             name='command_xarm',
@@ -42,7 +42,7 @@ def generate_launch_description():
             parameters=[params_file]
         ),
         Node(
-            namespace = 'R12',
+            namespace = 'R5',
             package='xarmrob',
             executable='xarm_kinematics',
             name='xarm_kinematics',
@@ -50,7 +50,7 @@ def generate_launch_description():
             parameters=[params_file]
         ),
         Node(
-            namespace = 'R12',
+            namespace = 'R5',
             package='xarmrob',
             executable='endpoint_smooth',
             name='endpoint_smooth',
