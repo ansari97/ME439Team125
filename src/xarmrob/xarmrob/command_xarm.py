@@ -158,7 +158,7 @@ class CommandXArm(Node):
             return
         
         # unpack the commands coming in. 
-        self.cmd_all = msg_in
+        self.cmd_all = msg_in.command
                     
         # send the servo commands if (and only if) there's an arm attached. 
         if self.arm_is_present:
