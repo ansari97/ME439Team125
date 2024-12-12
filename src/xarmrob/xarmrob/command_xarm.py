@@ -30,19 +30,19 @@ class CommandXArm(Node):
         self.sub_joint_angles = self.create_subscription(JointState, 'joint_angles_desired', self.compute_commands, 1, callback_group=ReentrantCallbackGroup())
         #   NOTE the Callback to the "self.compute_commands" method, which will compute the commands that should be sent to each specific motor. 
         
-        # =============================================================================
+         # =============================================================================
         #   Subscribe to "/bus_servo_commands" to get commands for direct use with the digital bus servo motors. 
         # =============================================================================
         ## This will come from command sliders or anything else that specifies Commands directly rather than joint angles.
         ## Note the message type "JointState" -- this maintains the structure of a JointState object even though the position[] field will be specified by command value rather than angle. 
-        # self.sub_bus_servo_commands = self.create_subscription(ME439JointCommand, '/bus_servo_commands', self.move_servos, 1, callback_group=ReentrantCallbackGroup())
+        self.sub_bus_servo_commands = self.create_subscription(ME439JointCommand, 'bus_servo_commands', self.move_servos, 1, callback_group=ReentrantCallbackGroup())
         #   NOTE the Callback to the "self.move_servos_and_set_joint_state" method, which will command the motors directly and also compute what joint angle the system model thinks that is. 
         
         # =============================================================================
         #   # Publisher for the digital servo motor commands. 
         # =============================================================================
-        # self.pub_bus_servo_commands = self.create_publisher(ME439JointCommand,'/bus_servo_commands',1)
-        # self.bus_servo_commands_msg = ME439JointCommand()
+        self.pub_bus_servo_commands = self.create_publisher(ME439JointCommand,'bus_servo_commands',1)
+        self.bus_servo_commands_msg = ME439JointCommand()
 
         # =============================================================================
         #   # Publisher for the Joint States. 
@@ -134,20 +134,19 @@ class CommandXArm(Node):
         try: 
             # convert the joint state to bus servo commands
             cmd_all = self.convert_joint_state_to_commands(jt_all)
-            # self.bus_servo_commands_msg.command = cmd_all
-            # self.bus_servo_commands_msg.name = ['cmd00','cmd01','cmd02','cmd03','cmd04','cmd05','cmd06']
-            # self.bus_servo_commands_msg.enable = True
-            # self.bus_servo_commands_msg.header.stamp = self.get_clock().now().to_msg()
+            self.bus_servo_commands_msg.command = cmd_all
+            self.bus_servo_commands_msg.name = ['cmd00','cmd01','cmd02','cmd03','cmd04','cmd05','cmd06']
+            self.bus_servo_commands_msg.enable = True
+            self.bus_servo_commands_msg.header.stamp = self.get_clock().now().to_msg()
             # Publish the bus servo commands, and let the handler for that message receive it. 
-            # self.pub_bus_servo_commands.publish(self.bus_servo_commands_msg)
+            self.pub_bus_servo_commands.publish(self.bus_servo_commands_msg)
             # # Alternatively, call the function to move the servos directly, rather than publishing the message. 
-            self.move_servos(cmd_all)
+            # self.move_servos_and_set_joint_state(self.bus_servo_commands_msg)
         except ValueError: 
             # traceback.print_exc(limit=1)
             # self.get_logger().error('ERROR: Value out of range. Not Publishing Joint State.')
             exc = traceback.format_exc(limit=1)
             self.get_logger().error(exc.splitlines()[-1])
-        
     # =============================================================================
     #   # Callback function: receives servo commands and publishes /joint_states, e.g. for an RVIZ simulation
     def move_servos(self, msg_in):
@@ -159,7 +158,7 @@ class CommandXArm(Node):
             return
         
         # unpack the commands coming in. 
-        self.cmd_all = msg_in.command 
+        self.cmd_all = msg_in
                     
         # send the servo commands if (and only if) there's an arm attached. 
         if self.arm_is_present:
