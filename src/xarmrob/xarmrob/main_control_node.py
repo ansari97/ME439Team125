@@ -97,7 +97,7 @@ def main(args=None):
 
     ###
     pickup_point = [0.145, 0.05, 0.155]; # x, y, z coordinates in base 5 frame
-    dropoff_point = [0.175, 0.10, 0.135]; # x, y, z coordinates in base 5 frame
+    dropoff_point = [0.10, 0.10, 0.10]; # x, y, z coordinates in base 5 frame
     out_of_way_point = [] # x, y, z coordinates in base 5 frame
 
     # 1 instantiate the control node
