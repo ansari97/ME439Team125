@@ -96,7 +96,7 @@ def main(args=None):
 
     ###
     pickup_point = [0.145, 0.05, 0.155]; # x, y, z coordinates in base 5 frame
-    dropoff_point = []; # x, y, z coordinates in base 5 frame
+    dropoff_point = [0.175, 0.10, 0.135]; # x, y, z coordinates in base 5 frame
     out_of_way_point = [] # x, y, z coordinates in base 5 frame
 
     # 1 instantiate the control node
@@ -127,6 +127,10 @@ def main(args=None):
     # # Testing
     future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "close")
     time.sleep(5)
+
+    # 4 move robot 5 to known pickup_point
+    control_node_instance.send_endpoint_to_robot(5, dropoff_point)
+    time.sleep(7)
 
     control_node_instance.get_logger().info("Finished sequence")
  
