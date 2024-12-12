@@ -20,10 +20,11 @@ coloredtext = lambda r, g, b, text: f'\033[38;2;{r};{g};{b}m{text}\033[38;2;255;
 
 
 
-
 class XArmKinematics(Node): 
     def __init__(self):
         super().__init__('xarm_kinematics')
+
+        self.namespace_name = self.get_namespace()
         
         # Create Services 
         self.srv_FK = self.create_service(ME439XArmForwardKinematics, 'xarm_forward_kinematics', self.compute_FK)
@@ -185,6 +186,7 @@ class XArmKinematics(Node):
     # # Function to compute joint angles to reach the target endpoint
     # =============================================================================
     def compute_IK_pub_JTANG(self, msg_endpoint):
+        self.get_logger().info(self.namespace_name)
         self.get_logger().info(str(msg_endpoint.xyz[0]))  
         self.get_logger().info(str(msg_endpoint.xyz[1])) 
         self.get_logger().info(str(msg_endpoint.xyz[2])) 

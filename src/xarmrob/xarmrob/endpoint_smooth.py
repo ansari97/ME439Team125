@@ -29,6 +29,8 @@ coloredtext = lambda r, g, b, text: f'\033[38;2;{r};{g};{b}m{text}\033[38;2;255;
 class EndpointSmooth(Node): 
     def __init__(self): 
         super().__init__('endpoint_smooth')
+
+        self.namespace_name = self.get_namespace()
         
         
         self.xyz_goal = [0.165, 0.0, 0.155] # roughly upright neutral with wrist at 45 degrees. Formally: [0.1646718829870224, 0.0, 0.1546700894832611]
@@ -79,7 +81,7 @@ class EndpointSmooth(Node):
         
         
     def endpoint_requests(self, msg_in):
-        self.get_logger().info("R5 Received end point command")
+        self.get_logger().info(self.namespace_name + " received end point command")
 
         # self.get_logger().info(msg_in.xyz)
         

@@ -18,6 +18,8 @@ class CommandXArm(Node):
     def __init__(self): 
         super().__init__('command_arm')
 
+        self.namespace_name = self.get_namespace()
+
         ## added by team 125
         # Subscriber to move only the gripper servo
         self.sub_operate_gripper = self.create_subscription(ME439GripperCommand, 'operate_gripper', self.operate_gripper, 1)

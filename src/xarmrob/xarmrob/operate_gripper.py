@@ -17,6 +17,8 @@ class OperateGripperServer(Node):
     def __init__(self):
         super().__init__("operate_gripper_server")
 
+        self.namespace_name = self.get_namespace()
+
         # action server for operating the gripper
         self.action_server = ActionServer(self, OperateGripper, "operate_gripper_action", self.callback)
 
@@ -26,10 +28,11 @@ class OperateGripperServer(Node):
         # gripper cmd values
         self.bus_servo_cmd_for_mapping_gripper = self.declare_parameter('bus_servo_cmd_for_mapping_gripper',[54, 570]).value
         
+        
 
     def callback(self, goal_handle):
         goal_request = goal_handle.request.order
-        self.get_logger().info("goal: " + str(goal_request) + " received by robot 5 gripper")   
+        self.get_logger().info("goal: " + str(goal_request) + " received by robot " + self.namespace_name + " gripper")   
         
         self.bus_servo_command_msg = ME439GripperCommand()
 
