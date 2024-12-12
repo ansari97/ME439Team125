@@ -121,7 +121,8 @@ class CommandXArm(Node):
         # Initialize arm position, slowly: 
         self.initializing = True
         if self.arm_is_present:
-            self.command_bus_servos(self.bus_servo_indices_base_to_tip , self.servo_neutral_cmds_base_to_tip)
+            pass
+            # self.command_bus_servos(self.bus_servo_indices_base_to_tip , self.servo_neutral_cmds_base_to_tip)
         
         self.timer = self.create_timer(10*self.movement_time_ms/1000, self.set_joint_state)
 
