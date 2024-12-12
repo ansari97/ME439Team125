@@ -31,9 +31,11 @@ class EndpointSmooth(Node):
         super().__init__('endpoint_smooth')
 
         self.namespace_name = self.get_namespace()
+
+        self.initialization_point = self.declare_parameter('initialization_point', [0.10, 0.10, 0.15])
         
-        self.xyz_goal = [0.10, 0.10, 0.15]
-        self.old_xyz_goal = [0.10, 0.10, 0.15]
+        self.xyz_goal = self.initialization_point
+        self.old_xyz_goal = self.initialization_point
         self.xyz_traj = [self.old_xyz_goal]
         self.disp_traj = self.xyz_traj 
         self.gripper = 0

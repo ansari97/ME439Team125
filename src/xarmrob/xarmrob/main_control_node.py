@@ -21,6 +21,8 @@ class ControlNode(Node):
     def __init__(self, node_name):
         super().__init__(node_name)
 
+        self.initialization_point = self.declare_parameter('initialization_point', [0.10, 0.10, 0.15])
+
         # action client for operating gripper
         self.operate_R5_gripper_client = ActionClient(
             self, OperateGripper, "/R5/operate_gripper_action"
@@ -96,8 +98,8 @@ def main(args=None):
     rclpy.init(args=args)
 
     ###
-    initialization_point = [0.10, 0.10, 0.15]
-    pickup_point = [0.03, 0.23, 0.07]; # x, y, z coordinates in base 12 frame
+    
+    pickup_point = [0.03, 0.28, 0.07]; # x, y, z coordinates in base 12 frame
     handoff_point_R12 = [0.15, 0.0, 0.07]; # x, y, z coordinates in base 12 frame
     handoff_point_R5 = [0.14, 0.0, 0.15]; # x, y, z coordinates in base 5 frame
     dropoff_point = [0.03, 0.28, 0.07];
@@ -113,7 +115,7 @@ def main(args=None):
     time.sleep(1) 
 
     control_node_instance.get_logger().info("Robot 12 to initialization point")
-    control_node_instance.send_endpoint_to_robot(12, initialization_point)
+    control_node_instance.send_endpoint_to_robot(12, control_node_instance.initialization_point)
     time.sleep(10.0)
 
     control_node_instance.get_logger().info("Sending open command to R12")

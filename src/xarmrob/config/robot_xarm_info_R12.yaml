@@ -1,6 +1,8 @@
 /**:  # This can be used to set parameters in any namespace, any node. 
 # command_xarm:  # This is used for a single node. 
   ros__parameters:
+    initialization_point: [0.03, 0.30, 0.07]
+
     # Parameters for ME439 Robot (Hiwonder xArm 1S) using RRRRRR structure with zyyxyx rotations (x forward, y left, z up)
     # Frequency to compute new commands (Hz) 
     command_frequency: 10
@@ -26,10 +28,10 @@
     bus_servo_cmd_for_mapping_joint_12: [870,501,138]
     rotational_angles_for_mapping_joint_23: [0,90,180]
     bus_servo_cmd_for_mapping_joint_23: [138,478,860]
-    rotational_angles_for_mapping_joint_34: [-90,0,90]
-    bus_servo_cmd_for_mapping_joint_34: [846, 475, 101]
-    rotational_angles_for_mapping_joint_45: [-90,0,90]
-    bus_servo_cmd_for_mapping_joint_45: [115, 482, 866]
+    rotational_angles_for_mapping_joint_34: [-115, -90,0,90, 112]
+    bus_servo_cmd_for_mapping_joint_34: [1000, 846, 475, 101, 0]
+    rotational_angles_for_mapping_joint_45: [-95, -90,0,90, 105]
+    bus_servo_cmd_for_mapping_joint_45: [91, 115, 482, 866, 927]
     rotational_angles_for_mapping_joint_56: [-90, 0, 90]
     bus_servo_cmd_for_mapping_joint_56: [131, 495, 869]
     rotational_angles_for_mapping_gripper: [0, 90]
