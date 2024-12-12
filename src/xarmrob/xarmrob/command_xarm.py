@@ -35,14 +35,14 @@ class CommandXArm(Node):
         # =============================================================================
         ## This will come from command sliders or anything else that specifies Commands directly rather than joint angles.
         ## Note the message type "JointState" -- this maintains the structure of a JointState object even though the position[] field will be specified by command value rather than angle. 
-        self.sub_bus_servo_commands = self.create_subscription(ME439JointCommand, '/bus_servo_commands', self.move_servos, 1, callback_group=ReentrantCallbackGroup())
+        # self.sub_bus_servo_commands = self.create_subscription(ME439JointCommand, '/bus_servo_commands', self.move_servos, 1, callback_group=ReentrantCallbackGroup())
         #   NOTE the Callback to the "self.move_servos_and_set_joint_state" method, which will command the motors directly and also compute what joint angle the system model thinks that is. 
         
         # =============================================================================
         #   # Publisher for the digital servo motor commands. 
         # =============================================================================
         # self.pub_bus_servo_commands = self.create_publisher(ME439JointCommand,'/bus_servo_commands',1)
-        self.bus_servo_commands_msg = ME439JointCommand()
+        # self.bus_servo_commands_msg = ME439JointCommand()
 
         # =============================================================================
         #   # Publisher for the Joint States. 

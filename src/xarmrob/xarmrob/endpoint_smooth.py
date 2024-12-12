@@ -66,7 +66,11 @@ class EndpointSmooth(Node):
             self.idx = len(self.disp_traj) - 1
         self.xyz_goal = self.disp_traj[self.idx]
         self.idx += 1
-        self.endpoint_desired_msg.xyz = self.xyz_goal 
+        self.endpoint_desired_msg.xyz = self.xyz_goal
+
+        self.get_logger().info(str(self.xyz_goal[0]))
+        self.get_logger().info(str(self.xyz_goal[1]))
+        self.get_logger().info(str(self.xyz_goal[2])) 
         # self.get_logger().info(self.endpoint_desired_msg)
         # self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
         # self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
