@@ -33,7 +33,7 @@ class EndpointSmooth(Node):
         self.namespace_name = self.get_namespace()
         
         self.xyz_goal = [0.10, 0.10, 0.15]
-        self.old_xyz_goal = [0.10, 0.10, 0,15]
+        self.old_xyz_goal = [0.10, 0.10, 0.15]
         self.xyz_traj = [self.old_xyz_goal]
         self.disp_traj = self.xyz_traj 
         self.gripper = 0
