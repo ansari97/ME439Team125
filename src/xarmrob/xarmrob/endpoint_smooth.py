@@ -33,8 +33,7 @@ class EndpointSmooth(Node):
         self.namespace_name = self.get_namespace()
         
         
-        self.xyz_goal = [0.165, 0.0, 0.155] # roughly upright neutral with wrist at 45 degrees. Formally: [0.1646718829870224, 0.0, 0.1546700894832611]
-        self.old_xyz_goal = [0.165, 0.0, 0.155]
+        self.old_xyz_goal = [0.10, 0.10, 0,15]
         self.xyz_traj = [self.old_xyz_goal]
         self.disp_traj = self.xyz_traj 
         self.gripper = 0
@@ -115,7 +114,7 @@ class EndpointSmooth(Node):
             self.pub_endpoint_desired.publish(self.endpoint_desired_msg)
 
             # pass
-            time.sleep(0.01)
+            time.sleep(0.1)
 
 def main(args=None):
     try: 

@@ -46,9 +46,9 @@ class ControlNode(Node):
         goal_message = OperateGripper.Goal()
         goal_message.order = order
 
-        R5_server_available = self.operate_R5_gripper_client.wait_for_server(10)
-        #R12_server_available = self.operate_R12_gripper_client.wait_for_server(10)
-        R12_server_available = True
+        R5_server_available = True#self.operate_R5_gripper_client.wait_for_server(10)
+        R12_server_available = self.operate_R12_gripper_client.wait_for_server(10)
+        # R12_server_available = True
         
         if not (R5_server_available and R12_server_available):
             self.get_logger().info("Gripper servers not available, status: " + str(R5_server_available) + ", " + str(R12_server_available))
@@ -96,6 +96,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     ###
+    initialization_point = [0.10, 0.10, 0,15]
     pickup_point = [0.03, 0.33, 0.07]; # x, y, z coordinates in base 12 frame
     handoff_point_R12 = [0.15, 0.0, 0.07]; # x, y, z coordinates in base 12 frame
     handoff_point_R5 = [0.14, 0.0, 0.15]; # x, y, z coordinates in base 5 frame
@@ -105,11 +106,15 @@ def main(args=None):
     # 1 instantiate the control node
     control_node_instance = ControlNode("main_control_node")
 
-    time.sleep(3)
+    time.sleep(3.0)
 
     # 2 Initialize both robots: done by the control xarm and the endpoint nodes
     control_node_instance.get_logger().info("Starting sequence...")
     time.sleep(1) 
+
+    control_node_instance.get_logger().info("Robot 12 to initialization point")
+    control_node_instance.send_endpoint_to_robot(12, initialization_point)
+    time.sleep(10.0)
 
     # 4 move robot 12 to known pickup_point
     control_node_instance.get_logger().info("Robot 12 to pickup point")
