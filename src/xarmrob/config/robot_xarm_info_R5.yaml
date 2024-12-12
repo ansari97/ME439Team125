@@ -1,7 +1,7 @@
 /**:  # This can be used to set parameters in any namespace, any node. 
 # command_xarm:  # This is used for a single node. 
   ros__parameters:
-    initialization_point: [0.03, 0.30, 0.07]
+    initialization_point: [0.03, 0.15, 0.15]
 
     # Parameters for ME439 Robot (Hiwonder xArm 1S) using RRRRRR structure with zyyxyx rotations (x forward, y left, z up)
     # Frequency to compute new commands (Hz) 
