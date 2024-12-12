@@ -32,7 +32,11 @@ class EndpointSmooth(Node):
 
         self.namespace_name = self.get_namespace()
 
-        self.initialization_point = self.declare_parameter('initialization_point', [0.10, 0.10, 0.15])
+        # self.get_logger().info("hello1")
+
+        self.initialization_point = self.declare_parameter('initialization_point', [0.10, 0.10, 0.15]).value
+
+        # self.get_logger().info(str(type(self.initialization_point)))
         
         self.xyz_goal = self.initialization_point
         self.old_xyz_goal = self.initialization_point

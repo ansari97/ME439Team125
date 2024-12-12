@@ -21,7 +21,7 @@ class ControlNode(Node):
     def __init__(self, node_name):
         super().__init__(node_name)
 
-        self.initialization_point = self.declare_parameter('initialization_point', [0.10, 0.10, 0.15])
+        self.initialization_point = self.declare_parameter('initialization_point', [0.10, 0.10, 0.15]).value
 
         # action client for operating gripper
         self.operate_R5_gripper_client = ActionClient(
