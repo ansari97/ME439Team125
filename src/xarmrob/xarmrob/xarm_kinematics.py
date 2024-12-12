@@ -28,7 +28,7 @@ class XArmKinematics(Node):
         # Create Services 
         self.srv_FK = self.create_service(ME439XArmForwardKinematics, 'xarm_forward_kinematics', self.compute_FK)
         self.srv_IK = self.create_service(ME439XArmInverseKinematics, 'xarm_inverse_kinematics', self.compute_IK)
-        self.sub_IK = self.create_subscription(ME439PointXYZ, 'endpoint_desired', self.compute_IK_pub_JTANG,1)
+        self.sub_IK = self.create_subscription(ME439PointXYZ,'endpoint_desired', self.compute_IK_pub_JTANG,1)
         self.pub_JTANG = self.create_publisher(JointState, 'joint_angles_desired',1)
         self.ang_all = [0., -np.pi/2., np.pi/2., 0., 0., 0., 0.]
         self.joint_angles_desired_msg = JointState()
@@ -184,7 +184,10 @@ class XArmKinematics(Node):
     # =============================================================================
     # # Function to compute joint angles to reach the target endpoint
     # =============================================================================
-    def compute_IK_pub_JTANG(self, msg_endpoint):  
+    def compute_IK_pub_JTANG(self, msg_endpoint):
+        self.get_logger().info(str(msg_endpoint.xyz[0]))  
+        self.get_logger().info(str(msg_endpoint.xyz[1])) 
+        self.get_logger().info(str(msg_endpoint.xyz[2])) 
         endpoint_goal = np.array(msg_endpoint.xyz)
         
         # effector_pose = request_IK.effector_pose

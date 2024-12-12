@@ -134,14 +134,14 @@ class CommandXArm(Node):
         try: 
             # convert the joint state to bus servo commands
             cmd_all = self.convert_joint_state_to_commands(jt_all)
-            self.bus_servo_commands_msg.command = cmd_all
-            self.bus_servo_commands_msg.name = ['cmd00','cmd01','cmd02','cmd03','cmd04','cmd05','cmd06']
-            self.bus_servo_commands_msg.enable = True
-            self.bus_servo_commands_msg.header.stamp = self.get_clock().now().to_msg()
+            # self.bus_servo_commands_msg.command = cmd_all
+            # self.bus_servo_commands_msg.name = ['cmd00','cmd01','cmd02','cmd03','cmd04','cmd05','cmd06']
+            # self.bus_servo_commands_msg.enable = True
+            # self.bus_servo_commands_msg.header.stamp = self.get_clock().now().to_msg()
             # Publish the bus servo commands, and let the handler for that message receive it. 
             # self.pub_bus_servo_commands.publish(self.bus_servo_commands_msg)
             # # Alternatively, call the function to move the servos directly, rather than publishing the message. 
-            # self.move_servos_and_set_joint_state(self.bus_servo_commands_msg)
+            self.move_servos(cmd_all)
         except ValueError: 
             # traceback.print_exc(limit=1)
             # self.get_logger().error('ERROR: Value out of range. Not Publishing Joint State.')
