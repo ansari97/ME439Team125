@@ -63,7 +63,7 @@ class ControlNode(Node):
     def send_endpoint_to_robot(self, robot, end_xyz):
         msg = ME439PointXYZ()
         msg.xyz = end_xyz
-        
+        self.get_logger().info("publishing endpoints")
         if robot == 5:
             self.pub_R5_endpoint_desired.publish(msg)
         else:  # robot == 12

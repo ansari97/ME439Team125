@@ -270,7 +270,9 @@ class CommandXArm(Node):
             # return servo_pos
         except:
             # traceback.print_exc()
-            self.get_logger().error('Bad servo read.')
+            # team125
+            pass
+            # self.get_logger().error('Bad servo read.')
 
     def operate_gripper(self, msg_in):
         cmd = msg_in.command
