@@ -66,6 +66,7 @@ class ControlNode(Node):
         self.get_logger().info("publishing endpoints")
         if robot == 5:
             self.pub_R5_endpoint_desired.publish(msg)
+            self.get_logger().info("publishing endpoints to R5")
         else:  # robot == 12
             self.pub_R12_endpoint_desired.publish(msg)
 
@@ -102,14 +103,15 @@ def main(args=None):
     # 1 instantiate the control node
     control_node_instance = ControlNode("main_control_node")
 
-    time.sleep(5)
+    time.sleep(3)
 
     # 2 Initialize both robots: done by the control xarm and the endpoint nodes
     control_node_instance.get_logger().info("Starting sequence...")
+    time.sleep(2)
 
     # # 3 Open R5 gripper so it doesn't topple the cargo when going to point
-    future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "open")
-    time.sleep(5) # waits for gripper to operate; adjust as required
+    # future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "open")
+    # time.sleep(5) # waits for gripper to operate; adjust as required
 
     # control_node_instance.get_logger().info("opened")
 
@@ -132,10 +134,15 @@ def main(args=None):
     control_node_instance.send_endpoint_to_robot(5, dropoff_point)
     time.sleep(7)
 
+    # # Testing
+    future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "open")
+    time.sleep(3)
+
     control_node_instance.get_logger().info("Finished sequence")
  
-    while(True):
-        pass
+    time.sleep(2)
+    # while(True):
+        # pass
 
     # # 5 close R5 gripper after it reaches the desired endpoint
     # future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "close")

@@ -57,7 +57,7 @@ class EndpointSmooth(Node):
         self.endpoint_speed = self.declare_parameter('endpoint_speed',0.05).value  # nominal speed for continuous movement among points. 
         
         # Set up a timer to send the commands at the specified rate. 
-        self.timer = self.create_timer(self.movement_time_ms/1000, self.send_endpoint_desired,callback_group=ReentrantCallbackGroup())
+        # self.timer = self.create_timer(self.movement_time_ms/1000, self.send_endpoint_desired,callback_group=ReentrantCallbackGroup())
 
     # Callback to publish the endpoint at the specified rate. 
     def send_endpoint_desired(self):
@@ -79,8 +79,6 @@ class EndpointSmooth(Node):
         
         
     def endpoint_requests(self, msg_in):
-        # Run a loop that gets input from the user
-
         self.get_logger().info("R5 Received end point command")
 
         # self.get_logger().info(msg_in.xyz)
@@ -100,14 +98,22 @@ class EndpointSmooth(Node):
         # Reset counter and wait until the trajectory has been played
         self.idx = 0
         while(self.idx<len(self.disp_traj)):
-            # print(self.idx)
-            rclpy.spin_once(self)
-            # time.sleep(0.08)
-            
-        self.old_xyz_goal = self.new_xyz_goal
-            
+            self.get_logger().info(str(self.idx))
+            # rclpy.spin_once(self)
+            self.xyz_goal = self.disp_traj[self.idx]
+            self.idx += 1
+            self.endpoint_desired_msg.xyz = self.xyz_goal
 
+            self.get_logger().info(str(self.xyz_goal[0]))
+            self.get_logger().info(str(self.xyz_goal[1]))
+            self.get_logger().info(str(self.xyz_goal[2])) 
+            # self.get_logger().info(self.endpoint_desired_msg)
+            # self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
+            # self.get_logger().info("xyz message type: " + str(type(self.endpoint_desired_msg.xyz)))
+            self.pub_endpoint_desired.publish(self.endpoint_desired_msg)
 
+            # pass
+            time.sleep(0.08)
 
 def main(args=None):
     try: 
