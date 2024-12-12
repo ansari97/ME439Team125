@@ -115,7 +115,7 @@ class EndpointSmooth(Node):
             self.pub_endpoint_desired.publish(self.endpoint_desired_msg)
 
             # pass
-            time.sleep(0.08)
+            time.sleep(0.01)
 
 def main(args=None):
     try: 

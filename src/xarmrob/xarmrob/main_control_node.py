@@ -97,7 +97,8 @@ def main(args=None):
 
     ###
     pickup_point = [0.145, 0.05, 0.155]; # x, y, z coordinates in base 5 frame
-    dropoff_point = [0.10, 0.10, 0.10]; # x, y, z coordinates in base 5 frame
+    handoff_point = [0.10, 0.10, 0.10]; # x, y, z coordinates in base 5 frame
+    dropoff_point = [];
     out_of_way_point = [] # x, y, z coordinates in base 5 frame
 
     # 1 instantiate the control node
@@ -107,7 +108,7 @@ def main(args=None):
 
     # 2 Initialize both robots: done by the control xarm and the endpoint nodes
     control_node_instance.get_logger().info("Starting sequence...")
-    time.sleep(2)
+    time.sleep(2) 
 
     # # 3 Open R5 gripper so it doesn't topple the cargo when going to point
     # future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "open")
@@ -131,11 +132,13 @@ def main(args=None):
     time.sleep(5)
 
     # 4 move robot 5 to known pickup_point
-    control_node_instance.send_endpoint_to_robot(5, dropoff_point)
+    control_node_instance.send_endpoint_to_robot(5, handoff_point)
     time.sleep(7)
 
     # # Testing
     future_gripper_R5 = control_node_instance.send_goal_to_gripper(5, "open")
+    time.sleep(0.5)
+    future_gripper_R5 = control_node_instance.send_goal_to_gripper(12, "close")
     time.sleep(3)
 
     control_node_instance.get_logger().info("Finished sequence")

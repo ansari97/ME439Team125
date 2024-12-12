@@ -64,7 +64,7 @@ def generate_launch_description():
         #     name='main_control_node',
         #     output='screen',  # Enable input and output to screen
         #     parameters=[params_file]
-        )
+        # )
         
         # Node(
         #     package='robot_state_publisher',
