@@ -43,7 +43,7 @@ class OperateGripperServer(Node):
         
         # send command to xarm to close gripper
         else:
-            self.bus_servo_command_msg.command = self.bus_servo_cmd_for_mapping_gripper[1]
+            self.bus_servo_command_msg.command = self.bus_servo_cmd_for_mapping_gripper[1]*3/4
             self.bus_servo_command_msg.enable = True
 
         self.pub_operate_gripper.publish(self.bus_servo_command_msg)

@@ -48,7 +48,8 @@ class ControlNode(Node):
         goal_message = OperateGripper.Goal()
         goal_message.order = order
 
-        R5_server_available = True#self.operate_R5_gripper_client.wait_for_server(10)
+        #R5_server_available = True
+        R5_server_available = self.operate_R5_gripper_client.wait_for_server(10)
         R12_server_available = self.operate_R12_gripper_client.wait_for_server(10)
         # R12_server_available = True
         
@@ -99,9 +100,10 @@ def main(args=None):
 
     ###
     
-    pickup_point = [0.03, 0.28, 0.07]; # x, y, z coordinates in base 12 frame
-    handoff_point_R12 = [0.15, 0.0, 0.07]; # x, y, z coordinates in base 12 frame
-    handoff_point_R5 = [0.14, 0.0, 0.15]; # x, y, z coordinates in base 5 frame
+    #pickup_point = [0.03, 0.32, 0.03]; # x, y, z coordinates in base 12 frame
+    pickup_point = [0.03, 0.32, 0.03]; # x, y, z coordinates in base 12 frame
+    handoff_point_R12 = [0.20, 0.0, 0.15]; # x, y, z coordinates in base 12 frame
+    handoff_point_R5 = [0.243, 0.0120, 0.2088]; # x, y, z coordinates in base 5 frame
     dropoff_point = [0.03, 0.28, 0.07];
     out_of_way_point = [0.1, 0, 0.15] # x, y, z coordinates in base 5 frame
 
@@ -116,30 +118,36 @@ def main(args=None):
 
     control_node_instance.get_logger().info("Robot 12 to initialization point")
     control_node_instance.send_endpoint_to_robot(12, control_node_instance.initialization_point)
-    time.sleep(10.0)
+    time.sleep(0.5)
+    control_node_instance.send_endpoint_to_robot(5, control_node_instance.initialization_point)
+    time.sleep(5.0)
 
     control_node_instance.get_logger().info("Sending open command to R12")
 
     # # Testing
     future_gripper_R5 = control_node_instance.send_goal_to_gripper(12, "open")
-    time.sleep(3)
+    time.sleep(0.5)
+    future_gripper_R12 = control_node_instance.send_goal_to_gripper(5, "open")
+    time.sleep(3.0)
 
     # 4 move robot 12 to known pickup_point
     control_node_instance.get_logger().info("Robot 12 to pickup point")
     control_node_instance.send_endpoint_to_robot(12, pickup_point)
-    time.sleep(10)
+    time.sleep(5.0)
 
     control_node_instance.get_logger().info("Sending close command to R12")
 
     # # Testing
     future_gripper_R5 = control_node_instance.send_goal_to_gripper(12, "close")
-    time.sleep(3)
+    time.sleep(3.0)
 
-    # control_node_instance.get_logger().info("R12 to handoff point")
+    control_node_instance.get_logger().info("R12 to handoff point")
 
-    # # 4 move robot 5 to known pickup_point
-    # control_node_instance.send_endpoint_to_robot(12, handoff_point_R12)
-    # time.sleep(7)
+    # 4 move robot 5 to known pickup_point
+    control_node_instance.send_endpoint_to_robot(12, handoff_point_R12)
+    time.sleep(0.5)
+    control_node_instance.send_endpoint_to_robot(5, handoff_point_R5)
+    time.sleep(5)
 
     # control_node_instance.get_logger().info("R5 to handoff point")
 
