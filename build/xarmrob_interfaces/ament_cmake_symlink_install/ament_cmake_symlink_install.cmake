@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/ME439Team125/install/xarmrob_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/ME439Team125/install/xarmrob_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/ME439Team125/install/xarmrob_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces/${destination}")
+      set(destination "/home/pi/ME439Team125/install/xarmrob_interfaces/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,185 +310,185 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439GripperCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439GripperCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439GripperCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439GripperCommand.json" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointLocation.json" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointLocation.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointLocation.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439JointLocation.json" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439PointXYZ.json" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439PointXYZ.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439PointXYZ.json" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/msg/ME439PointXYZ.json" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/ME439MoveToTarget.json" "DESTINATION" "share/xarmrob_interfaces/action")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/ME439MoveToTarget.json" "DESTINATION" "share/xarmrob_interfaces/action")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/ME439MoveToTarget.json" "DESTINATION" "share/xarmrob_interfaces/action")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/ME439MoveToTarget.json" "DESTINATION" "share/xarmrob_interfaces/action")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/OperateGripper.json" "DESTINATION" "share/xarmrob_interfaces/action")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/OperateGripper.json" "DESTINATION" "share/xarmrob_interfaces/action")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/OperateGripper.json" "DESTINATION" "share/xarmrob_interfaces/action")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/action/OperateGripper.json" "DESTINATION" "share/xarmrob_interfaces/action")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmForwardKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmForwardKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmForwardKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmForwardKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmInverseKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmInverseKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmInverseKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_type_description/xarmrob_interfaces/srv/ME439XArmInverseKinematics.json" "DESTINATION" "share/xarmrob_interfaces/srv")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
 
-# install(FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ros2_jazzy/build/ament_package/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ros2_jazzy/build/ament_package/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_fastrtps_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_c/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_typesupport_introspection_cpp/xarmrob_interfaces/" "DESTINATION" "include/xarmrob_interfaces/xarmrob_interfaces" "PATTERN" "*.hpp")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_python/xarmrob_interfaces/xarmrob_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/xarmrob_interfaces-0.0.0-py3.12.egg-info")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_python/xarmrob_interfaces/xarmrob_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/xarmrob_interfaces-0.0.0-py3.12.egg-info")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_python/xarmrob_interfaces/xarmrob_interfaces.egg-info/" "DESTINATION" "lib/python3.11/site-packages/xarmrob_interfaces-0.0.0-py3.11.egg-info")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_python/xarmrob_interfaces/xarmrob_interfaces.egg-info/" "DESTINATION" "lib/python3.11/site-packages/xarmrob_interfaces-0.0.0-py3.11.egg-info")
 
-# install(DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_py/xarmrob_interfaces/" "DESTINATION" "lib/python3.12/site-packages/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_generator_py/xarmrob_interfaces/" "DESTINATION" "lib/python3.12/site-packages/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_py/xarmrob_interfaces/" "DESTINATION" "lib/python3.11/site-packages/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/pi/ME439Team125/src/xarmrob_interfaces" DIRECTORY "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_generator_py/xarmrob_interfaces/" "DESTINATION" "lib/python3.11/site-packages/xarmrob_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install("TARGETS" "xarmrob_interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/xarmrob_interfaces")
-include("/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install("TARGETS" "xarmrob_interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.11/site-packages/xarmrob_interfaces")
+include("/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "xarmrob_interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/xarmrob_interfaces")
-include("/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install("TARGETS" "xarmrob_interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.11/site-packages/xarmrob_interfaces")
+include("/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "xarmrob_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/xarmrob_interfaces")
-include("/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install("TARGETS" "xarmrob_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.11/site-packages/xarmrob_interfaces")
+include("/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439GripperCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439GripperCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439GripperCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439GripperCommand.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointLocation.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointLocation.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointLocation.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439JointLocation.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439PointXYZ.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439PointXYZ.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439PointXYZ.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/msg/ME439PointXYZ.idl" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/ME439MoveToTarget.idl" "DESTINATION" "share/xarmrob_interfaces/action")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/ME439MoveToTarget.idl" "DESTINATION" "share/xarmrob_interfaces/action")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/ME439MoveToTarget.idl" "DESTINATION" "share/xarmrob_interfaces/action")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/ME439MoveToTarget.idl" "DESTINATION" "share/xarmrob_interfaces/action")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/OperateGripper.idl" "DESTINATION" "share/xarmrob_interfaces/action")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/OperateGripper.idl" "DESTINATION" "share/xarmrob_interfaces/action")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/OperateGripper.idl" "DESTINATION" "share/xarmrob_interfaces/action")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/action/OperateGripper.idl" "DESTINATION" "share/xarmrob_interfaces/action")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmForwardKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmForwardKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmForwardKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmForwardKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmInverseKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmInverseKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmInverseKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_adapter/xarmrob_interfaces/srv/ME439XArmInverseKinematics.idl" "DESTINATION" "share/xarmrob_interfaces/srv")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439JointCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439JointCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439JointCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439JointCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439GripperCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439GripperCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439GripperCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439GripperCommand.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439JointLocation.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439JointLocation.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439JointLocation.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439JointLocation.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439PointXYZ.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/msg/ME439PointXYZ.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439PointXYZ.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/msg/ME439PointXYZ.msg" "DESTINATION" "share/xarmrob_interfaces/msg")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/action/ME439MoveToTarget.action" "DESTINATION" "share/xarmrob_interfaces/action")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/action/ME439MoveToTarget.action" "DESTINATION" "share/xarmrob_interfaces/action")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/action/ME439MoveToTarget.action" "DESTINATION" "share/xarmrob_interfaces/action")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/action/ME439MoveToTarget.action" "DESTINATION" "share/xarmrob_interfaces/action")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/action/OperateGripper.action" "DESTINATION" "share/xarmrob_interfaces/action")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/action/OperateGripper.action" "DESTINATION" "share/xarmrob_interfaces/action")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/action/OperateGripper.action" "DESTINATION" "share/xarmrob_interfaces/action")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/action/OperateGripper.action" "DESTINATION" "share/xarmrob_interfaces/action")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmForwardKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmForwardKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmForwardKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmForwardKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmInverseKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmInverseKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmInverseKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/srv/ME439XArmInverseKinematics.srv" "DESTINATION" "share/xarmrob_interfaces/srv")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ros2_jazzy/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ros2_jazzy/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ros2_jazzy/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ros2_jazzy/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/xarmrob_interfaces/environment")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/xarmrob_interfaces")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/xarmrob_interfaces")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/xarmrob_interfaces")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/xarmrob_interfaces")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/xarmrob_interfaces")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/xarmrob_interfaces")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/xarmrob_interfaces")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/xarmrob_interfaces")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/xarmrob_interfaces")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/xarmrob_interfaces")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/xarmrob_interfaces")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/xarmrob_interfaces")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/xarmrob_interfaces")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/xarmrob_interfaces")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/xarmrob_interfaces")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/xarmrob_interfaces")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/xarmrob_interfaces")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/xarmrob_interfaces")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/xarmrob_interfaces")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/xarmrob_interfaces")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/xarmrob_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig.cmake" "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig-version.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig.cmake" "/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig-version.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+# install(FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig.cmake" "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig-version.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig.cmake" "/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig-version.cmake" "DESTINATION" "share/xarmrob_interfaces/cmake")
 
-# install(FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/package.xml" "DESTINATION" "share/xarmrob_interfaces")
-ament_cmake_symlink_install_files("/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces" FILES "/home/aansari/Documents/ME439/ME439Team125/src/xarmrob_interfaces/package.xml" "DESTINATION" "share/xarmrob_interfaces")
+# install(FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/package.xml" "DESTINATION" "share/xarmrob_interfaces")
+ament_cmake_symlink_install_files("/home/pi/ME439Team125/src/xarmrob_interfaces" FILES "/home/pi/ME439Team125/src/xarmrob_interfaces/package.xml" "DESTINATION" "share/xarmrob_interfaces")

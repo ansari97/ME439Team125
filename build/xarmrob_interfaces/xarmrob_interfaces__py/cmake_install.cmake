@@ -1,8 +1,8 @@
-# Install script for directory: /home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/xarmrob_interfaces__py
+# Install script for directory: /home/pi/ME439Team125/build/xarmrob_interfaces/xarmrob_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aansari/Documents/ME439/ME439Team125/install/xarmrob_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/ME439Team125/install/xarmrob_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

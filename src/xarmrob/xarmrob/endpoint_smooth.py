@@ -121,6 +121,7 @@ class EndpointSmooth(Node):
 
             # pass
             time.sleep(0.1)
+        self.old_xyz_goal = self.new_xyz_goal
 
 def main(args=None):
     try: 

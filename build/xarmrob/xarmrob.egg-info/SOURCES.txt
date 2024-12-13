@@ -1,8 +1,10 @@
 package.xml
 setup.cfg
 setup.py
-config/robot_xarm_info.yaml
+config/robot_xarm_info_R12.yaml
+config/robot_xarm_info_R5.yaml
 launch/finalproject.launch.py
+launch/finalproject_slave.launch.py
 launch/xarm_angle_sliders.launch.py
 launch/xarm_automatic.launch.py
 launch/xarm_cmd_sliders.launch.py

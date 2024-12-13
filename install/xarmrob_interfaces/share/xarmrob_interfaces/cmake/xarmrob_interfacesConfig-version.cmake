@@ -1,1 +1,1 @@
-/home/aansari/Documents/ME439/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig-version.cmake
+/home/pi/ME439Team125/build/xarmrob_interfaces/ament_cmake_core/xarmrob_interfacesConfig-version.cmake
