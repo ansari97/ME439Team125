@@ -178,7 +178,7 @@ def main(args=None):
     control_node_instance.send_endpoint_to_robot(5, control_node_instance.initialization_point)
     time.sleep(2)
     control_node_instance.send_endpoint_to_robot(12, control_node_instance.initialization_point)
-    time.sleep(4.5)
+    time.sleep(5)
 
     # Open R5 gripper
     control_node_instance.get_logger().info("Sending open command to R5")
