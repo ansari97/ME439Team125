@@ -157,7 +157,7 @@ def main(args=None):
     control_node_instance.send_endpoint_to_robot(12, control_node_instance.handoff_point_R12)
     time.sleep(0.5)
     control_node_instance.send_endpoint_to_robot(5, control_node_instance.out_of_way_point_R5)
-    time.sleep(4.5)
+    time.sleep(5)
     
     control_node_instance.send_endpoint_to_robot(5, control_node_instance.handoff_point_R5)
     time.sleep(4)
