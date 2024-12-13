@@ -16,7 +16,7 @@ def generate_launch_description():
         robot_desc = infp.read()
         
     # Find the YAML file of parameters
-    params_file_name = 'robot_xarm_info.yaml'
+    params_file_name = 'robot_xarm_info_R12.yaml'
     params_file = os.path.join(
         get_package_share_directory('xarmrob'),
         'config',

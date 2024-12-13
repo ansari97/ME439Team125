@@ -35,7 +35,7 @@
     rotational_angles_for_mapping_joint_56: [-90, 0, 90]
     bus_servo_cmd_for_mapping_joint_56: [131, 495, 869]
     rotational_angles_for_mapping_gripper: [0, 90]
-    bus_servo_cmd_for_mapping_gripper: [54,570]
+    bus_servo_cmd_for_mapping_gripper: [54,400]
 
 # # Kinematic parameters. Some for Inverse Kinematics only, others for Forward Kinematics also.
 # /**:
