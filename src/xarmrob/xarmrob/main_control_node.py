@@ -110,7 +110,8 @@ def main(args=None):
     control_node_instance = ControlNode("main_control_node")
 
 # #######################
-    handoff_point_idx = 2
+    handoff_point_idx = 1
+    
 # #######################
     
     # Change handoff point coordinates
